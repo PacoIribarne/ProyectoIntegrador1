@@ -1,0 +1,13 @@
+header{
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: solid black 1px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}

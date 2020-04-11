@@ -1,0 +1,30 @@
+header{
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: solid black 1px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    
+}
+.Canciones{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: blanchedalmond;
+    text-align: center;
+    width: 500px;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+ 
+}
+h1{
+    font-size: 25px;
+}

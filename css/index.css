@@ -1,0 +1,45 @@
+header{
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: solid black 1px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.triple{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+
+    gap: 20px;
+    height: 400px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.tracks{
+    border: solid black 1px;
+    background-color: blanchedalmond;
+}
+.albums{
+    border: solid black 1px;
+    background-color: blanchedalmond;
+}
+.artist{
+    border: solid black 1px;
+    background-color: blanchedalmond;
+}
+.arriba{
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+   
+    border: solid black 1px;
+
+}
