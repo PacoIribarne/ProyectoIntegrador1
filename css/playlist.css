@@ -28,3 +28,10 @@ a{
 h1{
     font-size: 25px;
 }
+.arriba{
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+   
+    border: solid black 1px;
+
+}
