@@ -1,13 +1,16 @@
 header{
     display: grid;
-    background-color: aqua;
+    background-color: rgba(255, 68, 0, 0.822);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    border: solid black 1px;
+    border: white 5px;
     font-family: 'Montserrat', sans-serif;
     padding: 15px;
+    border-radius: 10px;
     
 }
-
+body{
+    background-color: black;
+}
 a{
     text-decoration: none;
     text-align: center;
@@ -25,28 +28,58 @@ a{
     text-align: center;
 }
 .tracks{
-    border: solid black 1px;
-    background-color: blanchedalmond;
+border: white 1px;
+    display: grid;
+     grid-template-rows: 1fr 10fr;
+     gap: 15px;
+     text-align: center;
+     
 }
+.tracksarriba{
+    background-color: rgba(255, 68, 0, 0.822);
+    border-radius: 10px;
+}
+.abajo{
+    background-color: rgba(255, 68, 0, 0.822);
+    border-radius: 10px;
+}
+
 .albums{
-    border: solid black 1px;
-    background-color: blanchedalmond;
+    border: white 1px;
+    border-radius: 10px;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 1fr 10fr;
+}
+.arribaalbum{
+    border-radius: 10px;
+    background-color: rgba(255, 68, 0, 0.822);
+
+}
+.abajo2{
+    background-color: rgba(255, 68, 0, 0.822);
+    border-radius: 10px;
 }
 .artist{
-    border: solid black 1px;
-    background-color: blanchedalmond;
+    border: white 1px;
+    border-radius: 10px;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 1fr 10fr;
 }
 .arriba{
     font-family: 'Montserrat', sans-serif;
     height: 40px;
-   
-    border: solid black 1px;
+    border: white 1px;
+    background-color: white;
+    border-radius: 5px;
 
 }
-.arriba{
-    font-family: 'Montserrat', sans-serif;
-    height: 40px;
-   
-    border: solid black 1px;
-
+.ArtistArriba{
+    background-color: rgba(255, 68, 0, 0.822);
+    border-radius: 10px;
+}
+.abajo3{
+    background-color: rgba(255, 68, 0, 0.822);
+    border-radius: 10px;
 }
