@@ -1,13 +1,19 @@
 header{
     display: grid;
-    background-color: aqua;
+    background-color: rgba(255, 68, 0, 0.822);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    border: solid black 1px;
+    border: white 5px;
     font-family: 'Montserrat', sans-serif;
     padding: 15px;
+    border-radius: 10px;
+    border: solid #353535 1.5px;
     
+}
+body{
+    background-color: black;
 }
 a{
     text-decoration: none;
     text-align: center;
+    color: black;
 }

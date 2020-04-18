@@ -6,6 +6,7 @@ header{
     font-family: 'Montserrat', sans-serif;
     padding: 15px;
     border-radius: 10px;
+    border: solid #353535 1.5px;
     
 }
 body{
@@ -28,7 +29,6 @@ a{
     text-align: center;
 }
 .tracks{
-border: white 1px;
     display: grid;
      grid-template-rows: 1fr 10fr;
      gap: 15px;
@@ -38,10 +38,13 @@ border: white 1px;
 .tracksarriba{
     background-color: rgba(255, 68, 0, 0.822);
     border-radius: 10px;
+    border: solid #353535 1.5px;
 }
 .abajo{
     background-color: rgba(255, 68, 0, 0.822);
     border-radius: 10px;
+    
+    border: solid #353535 1.5px;
 }
 
 .albums{
@@ -54,11 +57,13 @@ border: white 1px;
 .arribaalbum{
     border-radius: 10px;
     background-color: rgba(255, 68, 0, 0.822);
+    border: solid #353535 1.5px;
 
 }
 .abajo2{
     background-color: rgba(255, 68, 0, 0.822);
     border-radius: 10px;
+    border: solid #353535 1.5px;
 }
 .artist{
     border: white 1px;
@@ -70,16 +75,18 @@ border: white 1px;
 .arriba{
     font-family: 'Montserrat', sans-serif;
     height: 40px;
-    border: white 1px;
-    background-color: white;
-    border-radius: 5px;
+    
+    color: white;
+    
 
 }
 .ArtistArriba{
     background-color: rgba(255, 68, 0, 0.822);
     border-radius: 10px;
+    border: solid #353535 1.5px;
 }
 .abajo3{
     background-color: rgba(255, 68, 0, 0.822);
     border-radius: 10px;
+    border: solid #353535 1.5px;
 }
