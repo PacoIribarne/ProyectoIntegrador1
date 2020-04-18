@@ -17,6 +17,32 @@ a{
     text-align: center;
     color: black;
 }
+.intermedio{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 40px;
+    gap: 20px;
+}
+.premio{
+    border-radius: 10px;
+    background-color: rgba(255, 68, 0, 0.822);
+    border: solid #353535 1.5px;
+    margin-top: 10px;
+}
+.buscador{
+    border-radius: 10px;
+    border: solid #353535 1.5px;
+    background-color: rgba(182, 178, 178, 0.89);
+    margin-top: 10px;
+}
+.carrusel{
+    background-color: grey;
+    height: 300px;
+    border-radius: 10px;
+    border: solid #353535 1.5px;
+    margin-top: 10px;
+    text-align: center;
+}
 .triple{
     margin-top: 20px;
     display: grid;
@@ -75,10 +101,7 @@ a{
 .arriba{
     font-family: 'Montserrat', sans-serif;
     height: 40px;
-    
     color: white;
-    
-
 }
 .ArtistArriba{
     background-color: rgba(255, 68, 0, 0.822);
@@ -89,4 +112,16 @@ a{
     background-color: rgba(255, 68, 0, 0.822);
     border-radius: 10px;
     border: solid #353535 1.5px;
+}
+.footer{
+    background-color: rgba(255, 68, 0, 0.822);
+    border-radius: 10px;
+    border: solid #353535 1.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+.deezer{
+    text-align: right;
+    padding-right: 10px;
 }
