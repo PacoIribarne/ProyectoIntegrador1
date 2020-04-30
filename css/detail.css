@@ -34,3 +34,26 @@ a{
     height: 40px;
     color: white;
 }
+.fotospinetta{
+    text-align: right;
+    object-fit: cover;
+    width: 470px;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    margin-top: 5px;
+}
+.texto{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr 1fr;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.albumes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+}

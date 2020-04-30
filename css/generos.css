@@ -41,9 +41,15 @@ body{
     gap: 30px;
     margin-top: 30px;
 }
-.fila1{
+.fila{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     text-align: center;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

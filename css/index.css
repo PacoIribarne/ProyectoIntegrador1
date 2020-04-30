@@ -57,18 +57,20 @@ a{
 .tracks{
     display: grid;
      grid-template-rows: 1fr 10fr;
-     gap: 15px;
+     gap: 8px;
      text-align: center;
      
 }
 .tracksarriba{
     background-color: rgba(255, 68, 0, 0.822);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border: solid #353535 1.5px;
 }
 .abajo{
     background-color: rgba(255, 68, 0, 0.822);
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     
     border: solid #353535 1.5px;
 }
@@ -77,41 +79,46 @@ a{
     border: white 1px;
     border-radius: 10px;
     display: grid;
-    gap: 15px;
+    gap: 8px;
     grid-template-rows: 1fr 10fr;
 }
 .arribaalbum{
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: rgba(255, 68, 0, 0.822);
     border: solid #353535 1.5px;
 
 }
 .abajo2{
     background-color: rgba(255, 68, 0, 0.822);
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: solid #353535 1.5px;
 }
 .artist{
     border: white 1px;
     border-radius: 10px;
     display: grid;
-    gap: 15px;
+    gap: 8px;
     grid-template-rows: 1fr 10fr;
+}
+
+.ArtistArriba{
+    background-color: rgba(255, 68, 0, 0.822);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: solid #353535 1.5px;
+}
+.abajo3{
+    background-color: rgba(255, 68, 0, 0.822);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: solid #353535 1.5px;
 }
 .arriba{
     font-family: 'Montserrat', sans-serif;
     height: 40px;
     color: white;
-}
-.ArtistArriba{
-    background-color: rgba(255, 68, 0, 0.822);
-    border-radius: 10px;
-    border: solid #353535 1.5px;
-}
-.abajo3{
-    background-color: rgba(255, 68, 0, 0.822);
-    border-radius: 10px;
-    border: solid #353535 1.5px;
 }
 .footer{
     background-color: rgba(255, 68, 0, 0.822);
@@ -129,14 +136,18 @@ a{
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 5px;
+    border-bottom: solid black;
+    
 }
 .albumblock{
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 5px;
+    border-bottom: solid black;
 }
 .artistblock{
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 5px;
+    border-bottom: solid black;
 }
