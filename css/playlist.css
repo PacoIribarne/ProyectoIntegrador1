@@ -1,6 +1,6 @@
 header{
     display: grid;
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border: white 5px;
     font-family: 'Montserrat', sans-serif;
@@ -11,7 +11,7 @@ header{
     
 }
 body{
-    background-color: black;
+    background-image: url(../img/fondo2.jpg);
 }
 a{
     text-decoration: none;
@@ -23,7 +23,7 @@ a{
     margin-top: 20px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-   background-color: rgba(255, 68, 0, 0.822);;
+   background-color: rgba(255, 68, 0, 0.61);
     text-align: center;
     border-radius: 10px;
     width: 500px;
@@ -45,7 +45,7 @@ h1{
 
 }
 .footer{
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border-radius: 10px;
     border: solid #353535 1.5px;
     display: grid;

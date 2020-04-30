@@ -1,6 +1,6 @@
 header{
     display: grid;
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border: white 5px;
     font-family: 'Montserrat', sans-serif;
@@ -13,7 +13,7 @@ a{
     color: black;
 }
 body{
-    background-color: black;
+    background-image: url(../img/fondo2.jpg);
 }
 .arriba{
     font-family: 'Montserrat', sans-serif;
@@ -24,7 +24,7 @@ body{
 
 }
 .footer{
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border-radius: 10px;
     border: solid #353535 1.5px;
     display: grid;

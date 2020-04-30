@@ -1,6 +1,6 @@
 header{
     display: grid;
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border: white 5px;
     font-family: 'Montserrat', sans-serif;
@@ -10,7 +10,7 @@ header{
     
 }
 body{
-    background-color: black;
+    background-image: url(../img/fondo2.jpg);
 }
 a{
     text-decoration: none;
@@ -25,7 +25,7 @@ a{
 }
 .premio{
     border-radius: 10px;
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border: solid #353535 1.5px;
     margin-top: 10px;
 }
@@ -62,13 +62,13 @@ a{
      
 }
 .tracksarriba{
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: solid #353535 1.5px;
 }
 .abajo{
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     
@@ -85,12 +85,12 @@ a{
 .arribaalbum{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border: solid #353535 1.5px;
 
 }
 .abajo2{
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: solid #353535 1.5px;
@@ -104,13 +104,13 @@ a{
 }
 
 .ArtistArriba{
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: solid #353535 1.5px;
 }
 .abajo3{
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: solid #353535 1.5px;
@@ -121,7 +121,7 @@ a{
     color: white;
 }
 .footer{
-    background-color: rgba(255, 68, 0, 0.822);
+    background-color: rgba(255, 68, 0, 0.61);
     border-radius: 10px;
     border: solid #353535 1.5px;
     display: grid;
