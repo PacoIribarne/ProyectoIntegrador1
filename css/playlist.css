@@ -27,14 +27,15 @@ a{
 .Canciones{
     margin-top: 20px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr;
    background-color: rgba(255, 68, 0, 0.61);
     text-align: center;
     border-radius: 10px;
-    width: 500px;
+    width: 475px;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     margin: auto;
+    margin-top: 20px;
     
  
 }
@@ -58,4 +59,9 @@ h1{
 .deezer{
     text-align: right;
     padding-right: 10px;
+}
+.containers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
