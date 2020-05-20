@@ -194,4 +194,33 @@ footer{
     .AgusLerej{
         font-size: 10px;
     }
+    .albumblock{
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 95px;
+    }
+    .trackblock{
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 95px;
+    }
+    .artistblock{
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 95px;
+    }
+    .portadaAlbum{
+        width: 50x;
+        height: 50px;
+    }
+    .nombrecancion{
+        display: block;
+    }
+    footer{
+        position: absolute;
+        bottom: 10px;
+    }
 }
