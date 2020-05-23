@@ -219,8 +219,4 @@ footer{
     .nombrecancion{
         display: block;
     }
-    footer{
-        position: absolute;
-        bottom: 10px;
-    }
 }
