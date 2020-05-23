@@ -40,11 +40,17 @@ footer{
     text-align: right;
     padding-right: 10px;
 }
-.todo{
+.generos{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 30px;
     margin-top: 30px;
+}
+.fila{
+    margin: auto;
+}
+.portadagenero{
+    border-radius: 10px;
+    margin: 20px;
 }
 .fila{
     display: grid;
@@ -69,7 +75,6 @@ h1{
   .fila{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding-left: 80px;
         grid-template-rows: 1fr 1f 1fr 1fr;
         margin-bottom: -20px;
     }
@@ -87,10 +92,8 @@ h1{
     }
     .fila{
         display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin-bottom: -350px;
-        margin-left: -50px;
     }
     .portadagenero{
         height: 100px;
