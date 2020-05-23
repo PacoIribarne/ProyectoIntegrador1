@@ -211,6 +211,7 @@ footer{
         display: inline-block;
         text-align: center;
         width: 95px;
+        height: 123.6px;
     }
     .portadaAlbum{
         width: 50x;
@@ -218,5 +219,8 @@ footer{
     }
     .nombrecancion{
         display: block;
+    }
+    footer{
+        margin-top: 50px;
     }
 }
