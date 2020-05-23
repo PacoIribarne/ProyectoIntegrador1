@@ -1,3 +1,8 @@
+.total{
+    display: grid;
+    grid-template-rows: 2fr 4fr 0.2fr;
+    margin: auto;
+}
 header{
     display: grid;
     background-color: rgba(255, 68, 0, 0.61);
@@ -7,7 +12,8 @@ header{
     font-size: 30px;
     padding: 15px;
     border-radius: 10px;
-    border: solid #353535 1.5px;    
+    border: solid #353535 1.5px;
+    height: 100px; 
 }
 .logo{
     margin: auto;
@@ -21,32 +27,25 @@ body{
 a{
     text-decoration: none;
     text-align: center;
-    color: black;
-    
+    color: black;  
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
 }
 .Canciones{
-    margin-top: 20px;
     display: grid;
     grid-template-rows: 0.25fr 1fr 1fr 1fr;
    background-color: rgba(255, 68, 0, 0.61);
     text-align: center;
     border-radius: 10px;
-    width: 475px;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    margin: auto;
-    margin-top: 20px;
-    
- 
+    font-family: 'Montserrat', sans-serif; 
 }
 h1{
     font-size: 25px;
-}
-.arriba{
-    font-family: 'Montserrat', sans-serif;
-    height: 40px;
-    color: white;
-
 }
 .footer{
     background-color: rgba(255, 68, 0, 0.61);
@@ -60,8 +59,39 @@ h1{
     text-align: right;
     padding-right: 10px;
 }
-.containers{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+@media(max-width: 768px){
+    .total{
+        display: grid;
+        grid-template-rows: 2fr 4fr 0.2fr;
+    }
+    .titulos{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
+@media(max-width: 320px){
+    .total{
+        grid-template-rows: 0.3fr 1.5fr 0.01fr;
+    }
+    header{
+        display: grid;
+        grid-template-columns: none; 
+        align-items: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        font-size: 8px;
+        height: 200px;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .AgusLerej{
+        font-size: 10px;
+    }
 }

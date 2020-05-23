@@ -1,3 +1,8 @@
+.total{
+    display: grid;
+    grid-template-rows: 2fr 0.1 1fr 3fr 0.2fr;
+    margin: auto;
+}
 header{
     display: grid;
     background-color: rgba(255, 68, 0, 0.61);
@@ -7,13 +12,21 @@ header{
     font-size: 30px;
     padding: 15px;
     border-radius: 10px;
-    border: solid #353535 1.5px;    
+    border: solid #353535 1.5px;
+    height: 100px; 
 }
 .logo{
     margin: auto;
+    height: 100px;
 }
 .titulos{
     margin: auto;
+}
+.buscador{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    padding-right: 200px;
+    margin-top: 10px;
 }
 body{
     background-image: url(../img/fondo2.jpg);
@@ -25,8 +38,7 @@ a{
 }
 .intermedio{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    height: 40px;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
 }
 .premio{
@@ -35,32 +47,19 @@ a{
     border: solid #353535 1.5px;
     margin-top: 10px;
 }
-.buscador{
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    margin-top: 10px;
-}
-.buscar{
-    
-}
 .carrusel{
     background-color: grey;
     height: 300px;
     border-radius: 10px;
     border: solid #353535 1.5px;
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
 }
 .triple{
-    margin-top: 20px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 20px;
-
     gap: 20px;
-    height: 400px;
     text-align: center;
 }
 .tracks{
@@ -84,6 +83,8 @@ a{
     border-bottom-right-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     border: solid #353535 1.5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .albums{
@@ -100,6 +101,8 @@ a{
     border-bottom-right-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     border: solid #353535 1.5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .artist{
     border: white 1px;
@@ -115,11 +118,8 @@ a{
     border-bottom-right-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     border: solid #353535 1.5px;
-}
-.arriba{
-    font-family: 'Montserrat', sans-serif;
-    height: 40px;
-    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 footer{
     background-color: rgba(255, 68, 0, 0.61);
@@ -155,6 +155,13 @@ footer{
     border-bottom: solid black;
 }
 @media(max-width: 768px){
+    .total{
+        display: grid;
+        grid-template-rows: 0.4fr 0.1fr 1.4fr 0.2fr;
+    }
+    header{
+        height: 100px;
+    }
     .titulos{
         font-size: 25px;
     }
@@ -181,13 +188,6 @@ footer{
     .deezer{
         height: 40px;
     }
-    .total{
-        display: grid;
-        grid-template-rows: 0.2fr 0.1fr 4.9fr 0.2fr;
-    }
-    .triple{
-        margin-top: 10px;
-    }
     .arriba{
         display: none;
     }
@@ -198,46 +198,36 @@ footer{
         display: grid;
         grid-template-columns: none; 
         align-items: center;
-        grid-template-rows: 0.5r 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         font-size: 8px;
+        height: 200px;
     }
     .triple{
         gap: 1px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .total{
-        grid-template-rows: 0.2fr 0.1fr 2fr 0.2fr;
-    }
-    .AgusLerej{
-        font-size: 10px;
+        grid-template-rows: 0.2fr 0.01fr 1fr 0.01fr;
     }
     .albumblock{
         vertical-align: top;
-        display: inline-block;
         text-align: center;
-        width: 95px;
     }
     .trackblock{
         vertical-align: top;
-        display: inline-block;
         text-align: center;
-        width: 95px;
     }
     .artistblock{
         vertical-align: top;
-        display: inline-block;
         text-align: center;
-        width: 95px;
-        height: 123.6px;
-    }
-    .portadaAlbum{
-        width: 50x;
-        height: 50px;
     }
     .nombrecancion{
         display: block;
     }
     footer{
-        margin-top: 50px;
+        margin-top: 10px;
+    }
+    .AgusLerej{
+        font-size: 10px;
     }
 }

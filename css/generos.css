@@ -1,3 +1,7 @@
+.total{
+    display: grid;
+    grid-template-rows: 0.7fr 0.2fr 1.3fr 0.2fr;
+}
 header{
     display: grid;
     background-color: rgba(255, 68, 0, 0.61);
@@ -8,6 +12,7 @@ header{
     padding: 15px;
     border-radius: 10px;
     border: solid #353535 1.5px;
+    height: 100px; 
 }
 .logo{
     margin: auto;
@@ -17,17 +22,13 @@ header{
 }
 a{
     text-decoration: none;
+    text-align: center;
     color: black;
 }
 body{
     background-image: url(../img/fondo2.jpg);
 }
-.arriba{
-    font-family: 'Montserrat', sans-serif;
-    height: 40px;
-    color: white;
 
-}
 footer{
     background-color: rgba(255, 68, 0, 0.61);
     border-radius: 10px;
@@ -43,59 +44,60 @@ footer{
 .generos{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .fila{
     margin: auto;
-}
-.portadagenero{
-    border-radius: 10px;
-    margin: 20px;
-}
-.fila{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     text-align: center;
+}
+.portadagenero{
+    border-radius: 10px;
+    margin: 20px;
 }
 h1{
     font-size: 40px;
     text-align: center;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
 }
 @media(max-width: 768px){
+    .titulos{
+        font-size: 25px;
+    }
+    .total{
+        display: grid;
+        grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
+    }
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1f 1fr 1fr;
+    }
+    footer{
+        margin-top: 10px;
+    }
     .AgusLerej{
         font-size: 12px;
         margin: auto;
     }
-    .arriba{
-        display: none;
-    }
-  .fila{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1f 1fr 1fr;
-        margin-bottom: -20px;
-    }
-    footer{
-        margin-top: 45px;
-    }
 }
 @media(max-width:320px){
+    .total{
+        grid-template-rows: 0.3fr 0.1fr 1.5fr 0.01fr;
+    }
     header{
         display: grid;
         grid-template-columns: none; 
         align-items: center;
-        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
-        font-size: 25px;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        font-size: 8px;
+        height: 200px;
     }
-    .fila{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-    .portadagenero{
-        height: 100px;
+    .AgusLerej{
+        font-size: 10px;
     }
 }
