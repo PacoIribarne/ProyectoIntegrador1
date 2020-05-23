@@ -82,7 +82,7 @@ h1{
         display: grid;
         grid-template-columns: none; 
         align-items: center;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
         font-size: 25px;
     }
     .fila{

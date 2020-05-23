@@ -153,6 +153,10 @@ footer{
     .titulos{
         font-size: 25px;
     }
+    .logo{
+        height: 70px;
+        padding-bottom: 10px;
+    }
     .carrusel{
         display: none;
     }
@@ -166,7 +170,10 @@ footer{
     .premio{
         display: none;
     }
-    img{
+    .portadaAlbum{
+        height: 40px;
+    }
+    .deezer{
         height: 40px;
     }
     .total{
@@ -185,7 +192,7 @@ footer{
         display: grid;
         grid-template-columns: none; 
         align-items: center;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5r 0.5fr 0.5fr 0.5fr;
         font-size: 8px;
     }
     .total{
