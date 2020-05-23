@@ -188,6 +188,9 @@ footer{
         grid-template-rows: 1fr 1fr 1fr 1fr;
         font-size: 8px;
     }
+    .triple{
+        gap: 1px;
+    }
     .total{
         grid-template-rows: 0.2fr 0.1fr 2fr 0.2fr;
     }
