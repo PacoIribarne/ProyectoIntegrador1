@@ -1,7 +1,6 @@
 .total{
     display: grid;
     grid-template-rows: 2fr 4fr 0.2fr;
-    margin: auto;
 }
 header{
     display: grid;
@@ -17,6 +16,7 @@ header{
 }
 .logo{
     margin: auto;
+    height: 100px;
 }
 .titulos{
     margin: auto;
@@ -47,22 +47,46 @@ a{
 h1{
     font-size: 25px;
 }
-.footer{
+footer{
     background-color: rgba(255, 68, 0, 0.61);
     border-radius: 10px;
     border: solid #353535 1.5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     margin-top: 10px;
 }
+.AgusLerej{
+    margin: auto;
+}
+.facebook{
+    height: 20px;
+    margin: auto;
+    padding: 10px;
+}
+.twitter{
+    height: 20px;
+    margin: auto;
+    padding: 10px;
+}
 .deezer{
+    height: 30x;
+    margin: auto;
+    padding: 5px;
+}
+.redesSociales{
     text-align: right;
     padding-right: 10px;
 }
 @media(max-width: 768px){
     .total{
         display: grid;
-        grid-template-rows: 2fr 4fr 0.2fr;
+        grid-template-rows: 2fr 6fr 0.2fr;
+    }
+    header{
+        height: 100px;
+    }
+    .logo{
+        height: 75px;
     }
     .titulos{
         font-size: 25px;
@@ -72,6 +96,25 @@ h1{
     }
     h3{
         font-size: 20px;
+    }
+    .AgusLerej{
+        font-size: 12px;
+        margin: auto;
+    }
+    .facebook{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
+    }
+    .twitter{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
+    }
+    .deezer{
+        height: 15px;
+        margin: auto;
+        padding: 5px;
     }
 }
 @media(max-width: 320px){
@@ -84,7 +127,11 @@ h1{
         align-items: center;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         font-size: 8px;
-        height: 200px;
+        height: 150px;
+    }
+    .logo{
+        height: 50px;
+        margin: auto;
     }
     .container{
         display: grid;
@@ -93,5 +140,17 @@ h1{
     }
     .AgusLerej{
         font-size: 10px;
+    }
+    .facebook{
+        height: 10px;
+        margin: auto;
+    }
+    .twitter{
+        height: 10px;
+        margin: auto;
+    }
+    .deezer{
+        height: 15px;
+        margin: auto;
     }
 }

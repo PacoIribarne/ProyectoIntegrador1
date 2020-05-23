@@ -126,13 +126,30 @@ footer{
     border-radius: 10px;
     border: solid #353535 1.5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     margin-top: 10px;
 }
+.AgusLerej{
+    margin: auto;
+}
+.facebook{
+    height: 20px;
+    margin: auto;
+    padding: 10px;
+}
+.twitter{
+    height: 20px;
+    margin: auto;
+    padding: 10px;
+}
 .deezer{
+    height: 30x;
+    margin: auto;
+    padding: 5px;
+}
+.redesSociales{
     text-align: right;
     padding-right: 10px;
-    
 }
 .trackblock{
     display: grid;
@@ -162,19 +179,14 @@ footer{
     header{
         height: 100px;
     }
+    .logo{
+        height: 75px ;
+    }
     .titulos{
         font-size: 25px;
     }
-    .logo{
-        height: 70px;
-        padding-bottom: 10px;
-    }
     .carrusel{
         display: none;
-    }
-    .AgusLerej{
-        font-size: 12px;
-        margin: auto;
     }
     p{
         font-size: 12px;
@@ -185,13 +197,25 @@ footer{
     .portadaAlbum{
         height: 40px;
     }
+    .AgusLerej{
+        font-size: 12px;
+        margin: auto;
+    }
+    .facebook{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
+    }
+    .twitter{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
+    }
     .deezer{
-        height: 40px;
+        height: 15px;
+        margin: auto;
+        padding: 5px;
     }
-    .arriba{
-        display: none;
-    }
-
 }
 @media(max-width: 320px){
     header{
@@ -200,7 +224,11 @@ footer{
         align-items: center;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         font-size: 8px;
-        height: 200px;
+        height: 150px;
+    }
+    .logo{
+        height: 50px;
+        margin: auto;
     }
     .triple{
         gap: 1px;
@@ -224,10 +252,20 @@ footer{
     .nombrecancion{
         display: block;
     }
-    footer{
-        margin-top: 10px;
-    }
+    
     .AgusLerej{
         font-size: 10px;
+    }
+    .facebook{
+        height: 10px;
+        margin: auto;
+    }
+    .twitter{
+        height: 10px;
+        margin: auto;
+    }
+    .deezer{
+        height: 15px;
+        margin: auto;
     }
 }
