@@ -5,15 +5,16 @@
 }
 header{
     display: grid;
-    background-color: rgba(255, 68, 0, 0.61);
+    background-color: rgba(139, 39, 3, 0.918);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border: white 5px;
     font-family: 'Patrick Hand', cursive;
     font-size: 30px;
     padding: 15px;
-    border-radius: 10px;
     border: solid #353535 1.5px;
-    height: 100px; 
+    height: 100px;
+    position: sticky;
+    top: 0;
 }
 .logo{
     margin: auto;
@@ -178,6 +179,7 @@ footer{
     }
     header{
         height: 100px;
+        position: static;
     }
     .logo{
         height: 75px ;
