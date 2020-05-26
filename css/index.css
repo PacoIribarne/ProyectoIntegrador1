@@ -48,14 +48,72 @@ a{
     border: solid #353535 1.5px;
     margin-top: 10px;
 }
-.carrusel{
+
+.Carrusel{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .FotosCarrusel{
+      display: none;
+  }
+  .antes, .despues {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .despues {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .antes:hover, .despues:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .texto {
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    background-color: rgba(0, 0, 0, 0.76);
+  }
+  .punto {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
     background-color: grey;
-    height: 300px;
-    border-radius: 10px;
-    border: solid #353535 1.5px;
-    margin-top: 10px;
-    text-align: center;
-}
+    border-radius: 50%;
+    display: inline-block;
+    transition: 1s linear;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 .triple{
     margin-top: 10px;
     display: grid;
