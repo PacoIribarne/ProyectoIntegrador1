@@ -1,5 +1,5 @@
 
-let urltrack = 'https://developers.deezer.com/api/artist '
+let urltrack = 'https://developers.deezer.com/api/artist'
 
 fetch (urltrack)
     .then(function(response){

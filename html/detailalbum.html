@@ -18,11 +18,11 @@
             <Div class="titulos"><a href="playlist.html">Playlist</a></Div>
         </header>
         <section>
-            <div class="infoalbum">
+            <div class="infoAlbum">
                 <h1>Ya no mires atrás</h1>
                 <h2>Alberto Spinetta</h2>
                 <p class="lanzamiento">23 de enero de 2020</p>
-                <img src="../img/album3spinetta.jpg" alt="">
+                <img class="imagenAlbum" src="../img/album3spinetta.jpg" alt="">
             </div>
             <ul class="listado">
                 <li class="cancion">
@@ -72,10 +72,16 @@
                 <img id="play" src="../img/play.png" alt="">
                 <img id="next" src="../img/next.png" alt="">
             </div>
-            <div class="seekbar">
-                <div id="fill" ></div>
-                <div id="handle" ></div>
+            <div class="tiempo">
+                <div class="seekbar">
+                    <div id="fill" ></div>
+                    <div id="handle" ></div>
+                </div>
+                <div class="numeros">
+                    <p class="tiempito"></p>
+                </div>
             </div>
+            <audio class="audioque" src=""></audio>
         </div>
     </div>
     <script src="../js/detailalbum.js"></script>

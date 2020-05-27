@@ -1,6 +1,3 @@
-*{
-    box-sizing: border-box;
-}
 .total{
     display: grid;
     grid-template-rows: 2fr 12fr 0.2fr;
@@ -64,7 +61,6 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
-}
 .reproduccion{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -117,12 +113,15 @@ section{
     grid-template-columns: 1fr 1.5fr;
     margin-top: 10px;
     gap: 10px;
-    margin: auto;
 }
-.infoalbum{
+.infoAlbum{
     display: grid;
     grid-template-rows: 0.1fr 0.1fr 0.1fr 4fr;
-    margin-bottom: 20px;
+}
+.imagenAlbum{
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1{
     font-size: 40px;
@@ -156,10 +155,15 @@ li{
     text-align: center;
     font-size: 25px;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
 }
 .boton-play{
     height: 60px;
+    margin: auto;
+    cursor: pointer;
+}
+.nombre{
+    text-align: left;
 }
 audio{
     margin: auto;
@@ -197,7 +201,7 @@ footer{
 @media(max-width: 768px){
     .total{
         display: grid;
-        grid-template-rows: 0.4fr 3fr 0.2fr;
+        grid-template-rows: 0.4fr 2fr 0.2fr;
     }
     header{
         height: 100px;
@@ -209,6 +213,9 @@ footer{
     .titulos{
         font-size: 25px;
     }
+    .infoAlbum{
+        grid-template-rows: 0.1fr 0.1fr 0.05fr 1fr;
+    }
     h1{
         font-size: 30px;
     }
@@ -218,9 +225,11 @@ footer{
     .lanzamiento{
         font-size: 18px;
     }
-    li{
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
+    .imagenAlbum{
+        height: 300px;
+    }
+    .boton-play{
+        height: 50px;
     }
     .nombre{
         font-size: 20px;
@@ -266,7 +275,36 @@ footer{
         margin: auto;
     }
     .total{
-        grid-template-rows: 0.2fr 3fr 0.2fr;
+        grid-template-rows: 0.2fr 3fr 0.1fr;
+    }
+    section{
+        grid-template-columns: none;
+        grid-template-rows: 0.5fr 1.6;
+    }
+    .infoAlbum{
+        gap: 2px;
+    }
+    h1{
+        font-size: 25px;
+        line-height: 0;
+    }
+    h2{
+        font-size: 20px;
+        line-height: 0;
+    }
+    .lanzamiento{
+        font-size: 15px;
+        line-height: 0;
+    }
+    .imagenAlbum{
+        height: 200px;
+        line-height: 0;
+    }
+    .cancion{
+        gap: 30px;
+    }
+    .boton-play{
+        height: 40px;
     }
     .AgusLerej{
         font-size: 10px;

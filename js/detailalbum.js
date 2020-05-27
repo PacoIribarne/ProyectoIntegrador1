@@ -24,28 +24,70 @@
 //     }
 // }
 
+//--------
 let cancion = document.querySelector('.cancion')
 let play = document.querySelector('#play')
 let otroPlay = document.querySelector('.boton-play')
-var isPlaying = false;
+let audio = document.querySelector('.audioque')
 
-addEventListener.otroPlay('click', function(){
-    var reproduciendo = document.querySelector('.botones');
-    let song = reproduciendo.innerHTML += '<audio autoplay src="../audio/spinetta.mp3"></audio>';
-    if(song.paused){
-        song.play();
-        otroPlay.innerHTML = '<img src"../img/pause.png">';
-    }else{
-        song.pause();
-        otroPlay.innerHTML = '<img src"../img/play.png">';
+otroPlay.onclick = function(){
+    audio.src = '../audio/spinetta.mp3'
+    otroPlay.onclick = function(){
+    
+    
     }
-})
+}
+
 play.onclick = function(){
     if(song.paused){
         song.play();
-        play.innerHTML = '<img src"../img/pause.png">';
+        play.innerHTML = '<img src="../img/pause.png">';
     }else{
         song.pause();
-        play.innerHTML = '<img src"../img/play.png">';
+        play.innerHTML = '<img src="../img/play.png">';
     }
 }
+
+// ----------
+// function createAudioPlayer() {
+//     let audioPlayer = document.querySelector('.reproduccion');
+//     let trackList = ['../audio/spinetta.mp3']
+//     let trackListLen;
+//     let currentTrack = 0;
+//     let informationDiv;
+//     let progressbar = document.querySelector('.seekbar');
+//     let progressbarWidth = document.querySelector('.fill')
+//     let progressmeter;
+//     let tiempito = document.querySelector('.tiempito')
+
+//     function play(){
+//         audioPlayer.play();
+//     }
+//     function pause(){
+//         audioPlayer.pause()
+//     }
+//     function seeking(e){
+//         var percent = e.offsetX / progressbarWidth;
+//         audioPlayer.currentTime = percent * audioPlayer.duration;
+//     }
+//     function displayTime(seconds){
+//         var minutes = parseInt(seconds / 60);
+//         var seconds = parseInt(seconds - minutes * 60);
+//         return minutes + ':' + seconds;
+//     }
+//     function updateTime() {
+//         tiempito.innerHTML =
+//           displayTime(audioPlayer.currentTime) + ' / ' +
+//           displayTime(audioPlayer.duration);
+//         var percent = audioPlayer.currentTime / audioPlayer.duration;
+//         progressmeter.style.width = (percent * progressbarWidth) + 'px';
+//       }
+//       function playCurrentTrack() {
+//         audioPlayer.pause();
+//         audioPlayer.src = trackList[currentTrack].src;
+//         audioPlayer.load();
+//         audioPlayer.play();
+//         updateTime();
+//     }
+
+// }

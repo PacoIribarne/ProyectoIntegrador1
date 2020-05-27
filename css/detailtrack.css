@@ -1,6 +1,6 @@
 .total{
     display: grid;
-    grid-template-rows: 2fr 6fr 0.2fr;
+    grid-template-rows: 2fr 4fr 0.2fr;
     margin: auto;
 }
 header{
@@ -39,39 +39,52 @@ section{
 }
 .album{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
     margin-left: 20px;
 }
 .fotoAlbum{
     height: 200px;
+    margin: auto;
 }
 .nombreAlbum{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    margin: auto;
 }
 .info{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
 }
 h1{
     font-size: 40px;
     color: white;
+    line-height: 1;
 }
 h2{
+    text-align: left;
+    line-height: 0;
+}
+.h2{
     font-size: 30px;
     color: white;
+    text-align: left;
 }
 .agregados{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+.boton-play{
+    height: 80px;
 }
 .duracion{
     font-size: 30px;
     color: white;
 }
 button{
-    height: 100px;
+    height: 60px;
     width: 200px;
+    border-radius: 20px;
+    align-items: left;
 }
 footer{
     background-color: rgba(255, 68, 0, 0.61);
@@ -102,4 +115,124 @@ footer{
 .redesSociales{
     text-align: right;
     padding-right: 10px;
+}
+@media(max-width: 768px){
+    header{
+        position: static;
+        header: 100px;
+    }
+    .titulos{
+        font-size: 25px;
+    }
+    .total{
+        display: grid;
+        grid-template-rows: 0.4fr 1.5fr 0.2fr;
+    }
+    .logo{
+        height: 75px;
+    }
+    .album{
+        grid-template-rows: 0.5fr 0.02fr;
+    }
+    .info{
+        grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    }
+    .nombreAlbum{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .h2{
+        font-size: 25px;
+    }
+    .agregados{
+        margin: auto;
+    }
+    .boton-play{
+        height: 60px;
+    }
+    .duracion{
+        font-size: 20px;
+    }
+    button{
+        height: 40px;
+    }
+    footer{
+        margin-top: 10px;
+    }
+    .AgusLerej{
+        font-size: 12px;
+        margin: auto;
+    }
+    .facebook{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
+    }
+    .twitter{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
+    }
+    .deezer{
+        height: 15px;
+        margin: auto;
+        padding: 5px;
+    }
+}
+@media(max-width: 320px){
+    .total{
+        grid-template-rows: 0.3fr 0.5fr 0.01fr ;
+    }
+    header{
+        display: grid;
+        grid-template-columns: none; 
+        align-items: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        font-size: 8px;
+        height: 150px;
+    }
+    .logo{
+        height: 50px;
+        margin: auto;
+    }
+    section{
+        grid-template-rows: 1fr 1.2fr;
+        grid-template-columns: none;
+        gap: 10px;
+    }
+    .album{
+        margin: auto;
+    }
+    .fotoAlbum{
+        height: 150px;
+    }
+    h1{
+        font-size: 25px;
+        line-height: 0.6;
+    }
+    .h2{
+        font-size: 20px;
+    }
+    .agregados{
+        gap: 20px;
+    }
+    button{
+        width: 60px;
+        height: 60px;
+    }
+    .AgusLerej{
+        font-size: 10px;
+    }
+    .facebook{
+        height: 10px;
+    }
+    .twitter{
+        height: 10px;
+    }
+    .deezer{
+        height: 15px;
+        margin: auto;
+    }
 }
