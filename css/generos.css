@@ -15,12 +15,6 @@ header{
     position: sticky;
     top: 0;
 }
-h2{
-    color: white;
-    font-family: 'Patrick Hand' , cursive;
-    text-align: center;
-    font-size: 30px;
-}
 .logo{
     margin: auto;
     height: 100px;
@@ -69,18 +63,22 @@ footer{
 .generos{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 10px;
-
-    
 }
-.cajas{
-    
+.generos{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.fila{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
     text-align: center;
 }
-
 .portadagenero{
-    border-radius: 20px;
+    border-radius: 10px;
+    margin: 20px;
 }
 h1{
     font-size: 40px;
@@ -145,10 +143,6 @@ h1{
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         font-size: 8px;
         height: 150px;
-    }
-    .generos{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .logo{
         height: 50px;
