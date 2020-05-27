@@ -60,11 +60,7 @@ footer{
     text-align: right;
     padding-right: 10px;
 }
-.generos{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-top: 10px;
-}
+
 .generos{
     display: grid;
     grid-template-rows: 1fr 1fr;
