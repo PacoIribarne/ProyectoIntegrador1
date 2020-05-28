@@ -1,13 +1,16 @@
 
-let urltrack = 'https://developers.deezer.com/api/artist'
+let endpointArtist = 'https://api.deezer.com/artist'
+let proxi = 'https://cors-anywhere.herokuapp.com/'
 
-fetch (urltrack)
-    .then(function(response){
-        return response.json();
+fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/')
+    .then(function(dataJson){
+        return dataJson.json();
     })
-    .then(function(datatrack){
-        console.log(datatrack.name[0]);
+    .then(function(dataArtist){
+        console.log(dataArtist);
     })
+
+
 
 var slideIndex = 0;
 showSlides();
