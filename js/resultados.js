@@ -16,11 +16,15 @@ fetch(url)
         return response.json()
     })
     .then (function (datos){
-        array.forEach(element => {
-            
-        });
+       let lista = document.querySelector(".lista")
+        let resultados = datos.data;
+
+        resultados.forEach(function(resultado){
+            lista.innerHTML+= "<li>"  + "<img src='" + resultado.album.cover_medium  +  "'>"  + resultado.title +  "</li>" })
        console.log (datos) 
+       
     })
+
     .catch(function(error){
         console.log(error)
     })

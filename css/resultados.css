@@ -23,6 +23,28 @@ footer{
 .AgusLerej{
     margin: auto;
 }
+ul{
+    color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    
+}
+li{
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    text-align: center;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
+form{
+    margin-top: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+
+}
 .facebook{
     height: 20px;
     margin: auto;
