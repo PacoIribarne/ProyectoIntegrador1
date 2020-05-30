@@ -250,9 +250,7 @@ footer{
     .titulos{
         font-size: 25px;
     }
-    .carrusel{
-        display: none;
-    }
+   
     p{
         font-size: 12px;
     }
@@ -294,6 +292,13 @@ footer{
     .logo{
         height: 50px;
         margin: auto;
+    }
+    .Carrusel{
+        display: none;
+    
+    }
+    .puntos{
+        display: none;
     }
     .triple{
         gap: 1px;
