@@ -24,12 +24,6 @@ header{
 .titulos{
     margin: auto;
 }
-.buscador{
-    display: grid;
-    grid-template-columns: 8fr 1fr;
-    padding-right: 200px;
-    margin-top: 10px;
-}
 body{
     background-image: url(../img/fondo2.jpg);
 }
@@ -40,7 +34,7 @@ a{
 }
 .intermedio{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 1fr 1fr;
     gap: 20px;
 }
 .premio{
@@ -49,7 +43,18 @@ a{
     border: solid #353535 1.5px;
     margin-top: 10px;
 }
-
+.buscador{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 10px;
+}
+.registro{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .Carrusel{
     max-width: 100%;
     position: relative;
