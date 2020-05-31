@@ -1,18 +1,19 @@
 .total{
     display: grid;
-    grid-template-rows: 0.1fr 1fr 6fr 0.1fr 1fr;
+    grid-template-rows: 2fr 14fr 0.2fr;
 }
 header{
     display: grid;
-    background-color: rgba(255, 68, 0, 0.61);
+    background-color: rgba(139, 39, 3, 0.918);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border: white 5px;
     font-family: 'Patrick Hand', cursive;
     font-size: 30px;
     padding: 15px;
-    border-radius: 10px;
-    border: solid #353535 1.5px;    
-    
+    border: solid #353535 1.5px;
+    height: 100px;
+    position: sticky;
+    top: 0;
 }
 .logo{
     margin: auto;
@@ -20,7 +21,6 @@ header{
 .titulos{
     margin: auto;
 }
-
 body{
     background-image: url(../img/fondo2.jpg);
 }
@@ -29,46 +29,105 @@ a{
     text-align: center;
     color: black;
 }
+section{
+    display: grid;
+    grid-template-rows: 2fr 0.4fr;
+}
+.arriba{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 10px;
+    gap: 10px;
+}
+.izquierda{
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+}
+.fotospinetta{
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.fans{
+    color: white;
+}
+.derecha{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+li{
+    list-style: none;
+    border: solid black 1px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.boton-play{
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+}
+.nombre{
+    text-align: left;
+    font-size: 20px;
+}
+ul{
+    background-color: rgba(255, 68, 0, 0.61);
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.albumes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.album{
+    margin-left: auto;
+    margin-right: auto;
+}
 footer{
     background-color: rgba(255, 68, 0, 0.61);
     border-radius: 10px;
     border: solid #353535 1.5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     margin-top: 10px;
 }
+.AgusLerej{
+    margin: auto;
+}
+.facebook{
+    height: 20px;
+    margin: auto;
+    padding: 10px;
+}
+.twitter{
+    height: 20px;
+    margin: auto;
+    padding: 10px;
+}
 .deezer{
+    height: 30x;
+    margin: auto;
+    padding: 5px;
+}
+.redesSociales{
     text-align: right;
     padding-right: 10px;
-}
-.arriba{
-    font-family: 'Montserrat', sans-serif;
-    height: 40px;
-    color: white;
-}
-.fotospinetta{
-    text-align: right;
-    object-fit: cover;
-    width: 470px;
-}
-.contenido{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 10px;
-    margin-top: 5px;
-}
-.texto{
-    display: grid;
-    grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr;
-    color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
-.albumes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 5px;
 }
 @media(max-width: 768px){
     .titulos{
