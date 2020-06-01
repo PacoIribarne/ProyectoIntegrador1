@@ -158,7 +158,7 @@ li{
     grid-template-columns: 1fr 4fr;
 }
 .boton-play{
-    height: 60px;
+    height: 50px;
     margin: auto;
     cursor: pointer;
 }

@@ -17,6 +17,7 @@ header{
 }
 .logo{
     margin: auto;
+    height: 100px;
 }
 .titulos{
     margin: auto;
@@ -32,6 +33,7 @@ a{
 section{
     display: grid;
     grid-template-rows: 2fr 0.4fr;
+    margin-top: 10px;
 }
 .arriba{
     display: grid;
@@ -54,6 +56,7 @@ h1{
 }
 .fans{
     color: white;
+    margin-left: 10px;
 }
 .derecha{
     display: grid;
@@ -74,13 +77,12 @@ li{
     grid-template-columns: 1fr 4fr;
 }
 .boton-play{
-    height: 40px;
+    height: 50px;
     margin: auto;
     cursor: pointer;
 }
 .nombre{
     text-align: left;
-    font-size: 20px;
 }
 ul{
     background-color: rgba(255, 68, 0, 0.61);
@@ -130,30 +132,58 @@ footer{
     padding-right: 10px;
 }
 @media(max-width: 768px){
+    .total{
+        grid-template-rows: 0.4fr 2fr 0.2fr;
+    }
+    header{
+        height: 100px;
+        position: static;
+    }
+    .logo{
+        height: 75px ;
+    }
     .titulos{
         font-size: 25px;
+    }
+    section{
+        grid-template-rows: 1fr 0.2fr;
+    }
+    .derecha{
+        grid-template-rows: 0.1fr 1.5fr;
+    }
+    .fotospinetta{
+        height: 200px;
+    }
+    .boton-play{
+        height: 40px;
+    }
+    .nombre{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .album{
+        height: 100px;
     }
     .AgusLerej{
         font-size: 12px;
         margin: auto;
     }
-    p{
-        font-size: 12px;
+    .facebook{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
     }
-    .conetido{
-        grid-template-columns: 1fr;
+    .twitter{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
     }
-    .fotospinetta{
-       display: none;
-    }
-    .texto{
-        background-image: url(../img/spinettadetail.jpg);
-    }
-    .arriba{
-        display:none
-    }
-    .total{
-        grid-template-rows: 0.2fr 5fr 0.2fr;
+    .deezer{
+        height: 15px;
+        margin: auto;
+        padding: 5px;
     }
 }
 @media(max-width: 320px){
@@ -161,8 +191,13 @@ footer{
         display: grid;
         grid-template-columns: none; 
         align-items: center;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         font-size: 8px;
+        height: 150px;
+    }
+    .logo{
+        height: 50px;
+        margin: auto;
     }
     .total{
         grid-template-rows: 1fr 4fr 0.2fr;
