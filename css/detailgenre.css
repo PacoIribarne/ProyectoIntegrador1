@@ -43,6 +43,9 @@ footer{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .AgusLerej{
     margin: auto;

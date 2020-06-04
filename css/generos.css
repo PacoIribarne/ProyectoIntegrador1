@@ -159,4 +159,9 @@ h1{
         height: 15px;
         margin: auto;
     }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 }
