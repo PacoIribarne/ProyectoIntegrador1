@@ -45,6 +45,8 @@ a{
     border-radius: 10px;
     justify-content: center;
     font-family: 'Montserrat', sans-serif; 
+    width: 500px;
+    margin: auto;
 }
 h2{
     font-size: 25px;
