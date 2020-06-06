@@ -1,6 +1,6 @@
 .total{
     display: grid;
-    grid-template-rows: 2fr 14fr 0.2fr;
+    grid-template-rows: 2fr 0.1fr 14fr 0.2fr;
 }
 header{
     display: grid;
@@ -14,6 +14,10 @@ header{
     height: 100px;
     position: sticky;
     top: 0;
+}
+.buscador{
+    margin-top: 10px;
+    text-align: right;
 }
 .logo{
     margin: auto;

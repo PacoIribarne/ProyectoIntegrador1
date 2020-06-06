@@ -1,6 +1,9 @@
 .total{
     display: grid;
-    grid-template-rows: 0.8fr 0.4fr 1.8fr 0.2fr;
+    grid-template-rows: 0.8fr 0.1fr 0.4fr 1.8fr 0.2fr;
+}
+.buscador{
+    text-align: right;
 }
 header{
     display: grid;
@@ -41,6 +44,7 @@ footer{
 .AgusLerej{
     margin: auto;
 }
+
 .facebook{
     height: 20px;
     margin: auto;
