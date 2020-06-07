@@ -46,6 +46,14 @@ a{
 body{
     background-image: url(../img/fondo2.jpg);
 }
+.artists{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.nombre{
+    color:white;
+    font-size: 30px;
+}
 footer{
     background-color: rgba(255, 68, 0, 0.61);
     border-radius: 10px;
