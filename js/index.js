@@ -1,17 +1,4 @@
 
-let endpointArtist = 'https://api.deezer.com/artist'
-let proxi = 'https://cors-anywhere.herokuapp.com/'
-
-fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/')
-    .then(function(dataJson){
-        return dataJson.json();
-    })
-    .then(function(dataArtist){
-        console.log(dataArtist);
-    })
-
-
-
 var slideIndex = 0;
 showSlides();
 
@@ -27,5 +14,25 @@ function showSlides() {
   setTimeout(showSlides, 2000); 
 }
 
+let proxy = 'https://cors-anywhere.herokuapp.com/'
+let urlChart = proxy + 'https://api.deezer.com/chart'
+
+fetch(urlChart)
+  .then(function(response){
+    return response.json()
+  })
+  .then(function(datos){
+      console.log(datos);
+      let portadaAlbum = document.querySelector('.portadaAlbum');
+      let albums = datos.albums.data;
+      console.log(albums)
+      albums.forEach(function(album){
+        portadaAlbum.src += album.cover
+        portadaAlbum.alt += album.title
+      })
+  })
+  .catch(function(error){
+    console.log(error)
+})
 
 

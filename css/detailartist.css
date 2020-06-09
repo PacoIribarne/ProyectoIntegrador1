@@ -49,7 +49,7 @@ section{
     display: grid;
     grid-template-rows: 0.1fr 0.1fr 0.1fr;
 }
-.fotospinetta{
+.fotoArtista{
     height: 400px;
     margin-left: auto;
     margin-right: auto;

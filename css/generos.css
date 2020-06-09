@@ -73,9 +73,7 @@ footer{
 .portadagenero{
     border-radius: 10px;
     margin: 20px;
-    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
     display: grid;
     grid-template-rows: 1fr 0.3fr;
     text-align: center;
@@ -84,6 +82,10 @@ img{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+.nombre{
+    color: white;
+    font-size: 25px;
 }
 h1{
     font-size: 40px;

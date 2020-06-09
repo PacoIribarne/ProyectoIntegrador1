@@ -189,7 +189,7 @@ a{
     font-family: 'Montserrat', sans-serif;
     border: solid #353535 1.5px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 footer{
     background-color: rgba(255, 68, 0, 0.61);
@@ -262,7 +262,13 @@ footer{
     .premio{
         display: none;
     }
+    .portadaTrack{
+        height: 40px;
+    }
     .portadaAlbum{
+        height: 40px;
+    }
+    .portadaArtist{
         height: 40px;
     }
     .AgusLerej{
@@ -348,7 +354,13 @@ footer{
     .semititulos{
         margin-top: 15px;
     }
+    .portadaTrack{
+        height: 100px;
+    }
     .portadaAlbum{
+        height: 100px;
+    }
+    .portadaArtist{
         height: 100px;
     }
     .intermedio{

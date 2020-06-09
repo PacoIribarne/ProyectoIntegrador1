@@ -7,9 +7,9 @@ let urlGenre = proxy + "https://api.deezer.com/genre/" + idGenre;
 
 fetch(urlGenre)
     .then(function(response){
-    return response.json();
+        return response.json();
     })
-        .then(function(datos){
+    .then(function(datos){
         console.log(datos);
         let nombreGenero = document.querySelector(".NombreGenero");
         nombreGenero.innerHTML += datos.name;
@@ -17,6 +17,7 @@ fetch(urlGenre)
     .catch(function(error){
         console.log(error)
     })
+
 
 
 let urlGenreArtist = proxy + "https://api.deezer.com/genre/" + idGenre + "/artists";
@@ -30,7 +31,7 @@ fetch(urlGenreArtist)
         let resultados = datos.data;
         let artists = document.querySelector('.artists');
         resultados.forEach(function(artist){
-        artists.innerHTML += '<a class="artist "href="'+'"> <img src="' + artist.picture_medium + '"> <p class="nombre">' + artist.name + '</p> </a>'
+        artists.innerHTML += '<a class="artist" href="detailartist.html?id=' + artist.id + '"> <img src="' + artist.picture_medium + '"> <p class="nombre">' + artist.name + '</p> </a>'
         })
     })
     .catch(function(error){
