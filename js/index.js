@@ -23,16 +23,41 @@ fetch(urlChart)
   })
   .then(function(datos){
       console.log(datos);
-      let portadaAlbum = document.querySelector('.portadaAlbum');
-      let albums = datos.albums.data;
-      console.log(albums)
-      albums.forEach(function(album){
-        portadaAlbum.src += album.cover
-        portadaAlbum.alt += album.title
-      })
+      let abajo = document.querySelector('.abajo');
+      let abajo2 = document.querySelector('.abajo2');
+      let abajo3 = document.querySelector('.abajo3');
+      // albums.forEach(function(album){
+      //   albumblock.innerHTML += '<a href= class="portadaAlbum" <img src="' + album.cover + '"> <p>' + album.title + '-' + album.artist.name + '</p> </a>'
+      // })
+      for (let i = 0; i < 4; i++){
+        abajo.innerHTML += '<a class="albumblock" href=""> <img class="portadaTrack src="' + datos.tracks.data[i].album.cover + '"> <p>' + datos.tracks.data[i].title + ' - ' + datos.tracks.data[i].artist.name + '</p> </a>'
+      }
+      for (let i = 0; i < 4; i++){
+        abajo2.innerHTML += '<a class="albumblock" href=""> <img class="portadaAlbum src="' + datos.albums.data[i].cover_medium + '"> <p>' + datos.albums.data[i].title + ' - ' + datos.albums.data[i].artist.name + '</p> </a>'
+      }
+      for (let i = 0; i < 4; i++){
+        abajo3.innerHTML += '<a class="albumblock" href="detailalbum.html?id=' + datos.artists.data[i].id + '"> <img class="portadaAlbum src="' + datos.artists.data[i].picture + '"> <p>' + datos.artists.data[i].name + '</p> </a>'
+      }
   })
   .catch(function(error){
     console.log(error)
 })
 
+
+// <a href="detailalbum.html"><div class="albumblock">
+//                 <img class="portadaAlbum" height="100px" >
+//                 <p class="nombrecancion">The Getaway | Red Hot Chilli Peppers </p>
+//             </div></a>
+//             <a href="detailalbum.html"><div class="albumblock">
+//                 <img class="portadaAlbum" height="100px" >
+//                 <p class="nombrecancion">The Getaway | Red Hot Chilli Peppers </p>
+//             </div></a>
+//             <a href="detailalbum.html"><div class="albumblock">
+//                 <img class="portadaAlbum" height="100px" >
+//                 <p class="nombrecancion">The Getaway | Red Hot Chilli Peppers </p>
+//             </div></a>
+//             <a href="detailalbum.html"><div class="albumblock">
+//                 <img class="portadaAlbum" height="100px" >
+//                 <p class="nombrecancion">The Getaway | Red Hot Chilli Peppers </p>
+//             </div></a>
 

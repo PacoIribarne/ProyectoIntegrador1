@@ -191,6 +191,15 @@ a{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+.portadaTrack{
+    height: 100px;
+}
+.portadaAlbum{
+    height: 100px;
+}
+.portadaArtist{
+    height: 100px;
+}
 footer{
     background-color: rgba(255, 68, 0, 0.61);
     border-radius: 10px;

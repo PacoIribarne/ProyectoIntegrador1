@@ -110,11 +110,11 @@ h1{
         height: 75px;
     }
     h1{
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 10px;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 10px;
     }
     footer{
         margin-top: 10px;
@@ -162,7 +162,7 @@ h1{
         font-size: 15px;
     }
     img{
-        height: 85px;
+        height: 160px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
