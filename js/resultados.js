@@ -16,15 +16,17 @@ fetch(url)
         return response.json()
     })
     .then (function (datos){
-       let lista = document.querySelector(".lista")
+        let lista = document.querySelector(".lista")
         let resultados = datos.data;
-
+        console.log (datos) 
         resultados.forEach(function(resultado){
-            lista.innerHTML+= "<li>"  + "<img src='" + resultado.album.cover_medium  +  "'>"  + resultado.title +  "</li>" })
-       console.log (datos) 
+            lista.innerHTML += '<li> <a class="li" href="detailartist.html?id=' + resultado.artist.id + '"> <img src="' + resultado.artist.picture_medium + '"> <p>' + resultado.artist.name + '</p> </a> </li>'
+            lista.innerHTML += '<li> <a class="li" href="detailtrack.html?id=' + resultado.id + '"> <img src="' + resultado.album.cover_medium + '"> <p>' + resultado.title + '</p> </a> </li>'
+            lista.innerHTML += '<li> <a class="li" href="detailalbum.html?id=' + resultado.album.id + '"> <img src="' + resultado.album.cover_medium + '"> <p>' + resultado.album.title + '</p> </a> </li>'
+        })       
+        
        
     })
-
     .catch(function(error){
         console.log(error)
     })
