@@ -26,6 +26,12 @@ header{
 .titulos{
     margin: auto;
 }
+.agregar{
+    margin: auto;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px; 
+}
 body{
     background-image: url(../img/fondo2.jpg);
 }
@@ -77,6 +83,8 @@ li{
     padding: 10px;
     text-align: center;
     font-size: 25px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 .boton-play{
     height: 50px;
@@ -98,6 +106,7 @@ ul{
 iframe{
     height: 90px;
     width: 100%;
+    border-radius: 15px;
 }
 .albumes{
     display: grid;

@@ -24,6 +24,13 @@ header{
     margin: auto;
     height: 100px;
 }
+iframe{
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 90px;
+    width: 100%;
+    border-radius: 15px;
+}
 .titulos{
     margin: auto;
 }
@@ -32,18 +39,26 @@ a{
     text-align: center;
     color: black;
 }
+.agregar{
+    margin: auto;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;    
+}
 body{
     background-image: url(../img/fondo2.jpg);
 }
 section{
     display: grid;
-    grid-template-columns:1fr 3fr;
+    grid-template-columns:1fr ;
     margin-top: px;
-    gap: 20px;
-    border: solid white 1px;
+
+    width: 1300px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: rgba(116, 113, 113, 0.281) ;
     padding: 25px;
     margin-top: 30px;
-
 }
 .album{
     display: grid;
@@ -64,12 +79,14 @@ section{
     grid-template-rows: 0.5fr 0.5fr 1fr;
 }
 h1{
-    font-size: 40px;
+    font-size: 30px;
     color: white;
-    line-height: 1;
+    
+    text-align: center;
+    
 }
 h2{
-    text-align: left;
+    text-align: center;
     line-height: 0;
 }
 .h2{
@@ -79,18 +96,25 @@ h2{
 }
 .agregados{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 68, 0, 0.61);
+    border: solid #353535 1.5px;
+    height: 100px;
 }
 .boton-play{
     height: 80px;
 }
 .duracion{
-    font-size: 30px;
+    font-size: 20px;
     color: white;
+    margin: auto;
 }
-.agregar{
-    height: 60px;
-    width: 200px;
+{
+margin: auto;
+    height: 40px;
+    width: 120px;
     border-radius: 20px;
     align-items: left;
 }
@@ -162,6 +186,7 @@ footer{
     }
     .duracion{
         font-size: 20px;
+        
     }
     
     footer{
@@ -208,10 +233,12 @@ footer{
         grid-template-columns: none;
         gap: 10px;
         border: solid white 1px;
+        
         margin-top: 50px;
         border: transparent;
         position: relative;
         bottom: 50px;
+        
     
     }
     .album{

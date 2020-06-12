@@ -35,6 +35,12 @@ a{
     text-align: center;
     color: black;
 }
+.agregar{
+    margin: auto;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;    
+}
 .sonar{
     background-color: rgba(0, 0, 0, 0.664);
     position: absolute;
@@ -159,6 +165,7 @@ li{
     text-align: center;
     font-size: 25px;
     display: grid;
+    grid-template-columns: 3fr 1fr;
   
 }
 .boton-play{
@@ -205,6 +212,7 @@ footer{
 iframe{
     height: 90px;
     width: 100%;
+    border-radius: 15px;
 }
 @media(max-width: 768px){
     .total{

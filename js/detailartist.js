@@ -34,7 +34,7 @@ fetch(urlArtist)
     .then(function(datos){
         let canciones = document.querySelector('.canciones');
         for(let i=0 ; i < 5 ; i++){
-        canciones.innerHTML += '<li> <iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + datos.data[i].id + '&app_id=1"></iframe> </li>'
+        canciones.innerHTML += '<li> <iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + datos.data[i].id + '&app_id=1"></iframe> <button class= "agregar"> Agregar a playlist </button>  </li>'
         }
         console.log(datos)
     })

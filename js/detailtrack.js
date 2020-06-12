@@ -18,7 +18,12 @@ fetch(urlTrack)
         let parteAlbum = document.querySelector('.album');
         parteAlbum.innerHTML += '<a href="../html/detailalbum.html?id=' + datos.album.id + '"><img class="fotoAlbum" src="' + datos.album.cover_big + '" alt=""></a>'
         parteAlbum.innerHTML += '<a href="../html/detailalbum.html?id=' + datos.album.id + '"><p class="nombreAlbum">Álbum: ' + datos.album.title + '</p></a>'
-
+        let agregados = document.querySelector('.agregados');
+        
+        agregados.innerHTML += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + datos.id + '&app_id=1"></iframe>'
+        agregados.innerHTML += '<p class="duracion">Duración:' +  datos.duration + 's </p>'
+        
+        agregados.innerHTML += '<button class="agregar">Agregar a tu playlist</button>'
         // <a href="../html/detailalbum.html"><img class="fotoAlbum" src="../img/album4spinetta.jpg" alt=""></a>
         //         <a href="../html/detailalbum.html"><p class="nombreAlbum">Nombre del álbum</p></a>
     })
