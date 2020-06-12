@@ -148,7 +148,7 @@ ul{
     background-color: rgba(255, 68, 0, 0.61);
     padding: 10px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -159,7 +159,7 @@ li{
     text-align: center;
     font-size: 25px;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+  
 }
 .boton-play{
     height: 50px;
@@ -201,6 +201,10 @@ footer{
 .redesSociales{
     text-align: right;
     padding-right: 10px;
+}
+iframe{
+    height: 90px;
+    width: 100%;
 }
 @media(max-width: 768px){
     .total{

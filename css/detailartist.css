@@ -77,8 +77,6 @@ li{
     padding: 10px;
     text-align: center;
     font-size: 25px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
 }
 .boton-play{
     height: 50px;
@@ -88,6 +86,7 @@ li{
 .nombre{
     text-align: left;
 }
+
 ul{
     background-color: rgba(255, 68, 0, 0.61);
     padding: 10px;
@@ -95,6 +94,10 @@ ul{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
+}
+iframe{
+    height: 90px;
+    width: 100%;
 }
 .albumes{
     display: grid;

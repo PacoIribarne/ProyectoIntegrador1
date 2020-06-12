@@ -18,9 +18,10 @@ fetch(urlGenre)
         infoAlbum.innerHTML += '<img class="imagenAlbum" src="' + datos.cover_big + '" alt="' + datos.title + '">'
 
         let listado = document.querySelector('.listado');
-        for(let i=0 ; i < length ; i++){
-            listado.innerHTML += '<li> <iframe scrolling="no" frameborder="0" allowTransparency="true" width="700" height="350" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + datos.tracks.data[i].id + '&app_id=1"></iframe> </li>'
-        }
+            for(let i=0 ; i < datos.tracks.data.length ; i++){
+             listado.innerHTML += '<li> <iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + datos.tracks.data[i].id + '&app_id=1"></iframe> </li>'
+         }
+        
     })
     .catch(function(error){
         console.log(error);
