@@ -19,7 +19,7 @@ fetch(urlGenre)
 
         let listado = document.querySelector('.listado');
             for(let i=0 ; i < datos.tracks.data.length ; i++){
-             listado.innerHTML += '<li> <iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + datos.tracks.data[i].id + '&app_id=1"></iframe> <button class="agregar"> Agregar a playlist </button> </li>'
+             listado.innerHTML += '<li> <iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + datos.tracks.data[i].id + '&app_id=1"></iframe> <a href= "detailtrack.html?id='+ datos.tracks.data[i].id + '"class="agregar"> Ir a track </a> </li>'
             
          }
         
