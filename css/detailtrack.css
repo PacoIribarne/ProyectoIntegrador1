@@ -1,8 +1,4 @@
-.total{
-    display: grid;
-    grid-template-rows: 2fr 0.1fr 4fr 1fr;
-    margin: auto;
-}
+
 header{
     display: grid;
     background-color: rgba(139, 39, 3, 0.918);
@@ -18,7 +14,7 @@ header{
 }
 .buscador{
     text-align: right;
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 .logo{
     margin: auto;
@@ -42,18 +38,16 @@ a{
 .agregar{
     margin: auto;
     height: 40px;
-    width: 120px;
-    border-radius: 20px;    
+    border-radius: 20px;
+    color: white;
 }
 body{
     background-image: url(../img/fondo2.jpg);
 }
 section{
     display: grid;
-    grid-template-columns:1fr ;
-    margin-top: px;
-
-    width: 1300px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
     border-radius: 5px;
     margin: auto;
     background-color: rgba(116, 113, 113, 0.281) ;
@@ -96,12 +90,13 @@ h2{
 }
 .agregados{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 10px;
     border-radius: 10px;
     background-color: rgba(255, 68, 0, 0.61);
     border: solid #353535 1.5px;
     height: 100px;
+    width: 100%;
 }
 .boton-play{
     height: 80px;
@@ -259,7 +254,6 @@ footer{
         gap: 20px;
     }
     .agregar{
-        width: 60px;
         height: 60px;
         position: relative;
         top: 10px;
