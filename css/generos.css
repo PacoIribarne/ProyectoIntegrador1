@@ -116,6 +116,13 @@ h1{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin-top: 10px;
     }
+    .generos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .individual{
+        height: 200px;
+    }
     footer{
         margin-top: 10px;
     }
@@ -141,7 +148,7 @@ h1{
 }
 @media(max-width:320px){
     .total{
-        grid-template-rows: 0.3fr 0.1fr 0.1fr 8fr 0.01fr;
+        grid-template-rows: 0.3fr 0.1fr 0.1fr 5fr 0.01fr;
     }
     header{
         display: grid;
@@ -150,22 +157,24 @@ h1{
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         font-size: 8px;
         height: 150px;
+        width: auto;
     }
     .logo{
         height: 50px;
         margin: auto;
     }
     .generos{
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        gap: 2px;
     }
-    .portadagenero{
+    .nombre{
         font-size: 15px;
+        margin-bottom: -10px;
     }
-    img{
-        height: 160px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+    .individual{
+        height: 100px;
+       
     }
     .AgusLerej{
         font-size: 10px;
@@ -183,7 +192,6 @@ h1{
         margin: auto;
     }
     footer{
-        position: fixed;
         bottom: 0;
         width: 100%;
     }

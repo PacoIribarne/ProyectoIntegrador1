@@ -1,6 +1,6 @@
 .total{
     display: grid;
-    grid-template-rows: 2fr 1fr 10fr 0.2fr;
+    grid-template-rows: 0.4fr 0.1fr 10fr 0.2fr;
 }
 
 header{
@@ -19,6 +19,7 @@ header{
 }
 .buscador{
     text-align: right;
+    margin-top: 20px;
 }
 .logo{
     margin: auto;
@@ -36,20 +37,20 @@ a{
     color: black;  
 }
 h1{
-    color: white;
+    font-size: 40px;
     text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
 }
-h2{
-    font-size: 25px;
-    border: solid black 4px;
-    border-radius: 10px;
-}
-ul{
+
+.playlistWrapper{
     background-color: rgba(255, 68, 0, 0.61);
     border-radius: 10px;
     width: 500px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0;
 
 }
 li{
@@ -72,6 +73,7 @@ iframe{
     text-align: center;
   position: relative;
     bottom: 25px;
+    margin-top: 5px;
 }
 .cancion{
     text-align: center;
@@ -111,7 +113,7 @@ footer{
 @media(max-width: 768px){
     .total{
         display: grid;
-        grid-template-rows: 2fr 0.1fr 6fr 0.2fr;
+        grid-template-rows: 0.4fr 0.1fr 6fr 0.2fr;
     }
     header{
         height: 100px;
@@ -151,7 +153,7 @@ footer{
 }
 @media(max-width: 320px){
     .total{
-        grid-template-rows: 0.3fr 0.1fr 1.5fr 0.01fr;
+        grid-template-rows: 0.3fr 0.01fr 1.5fr 0.01fr;
     display: grid;
     }
     header{
@@ -172,6 +174,17 @@ footer{
 
     h3{
         font-size: 15px;
+    }
+    .playlistWrapper{
+        width: 100%;
+        padding: 0;
+    }
+    li{
+       display: grid;
+       grid-template-rows: 0.5fr 1fr;
+    }
+    iframe{
+        width: 100%;
     }
     .AgusLerej{
         font-size: 10px;

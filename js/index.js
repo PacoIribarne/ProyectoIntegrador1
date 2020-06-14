@@ -36,7 +36,7 @@ fetch(urlChart)
         abajo2.innerHTML += '<a class="albumblock" href="detailalbum.html?id=' + datos.albums.data[i].id + '"> <img class="portadaAlbum" src="' + datos.albums.data[i].cover_medium + '"> <p>' + datos.albums.data[i].title + ' - ' + datos.albums.data[i].artist.name + '</p> </a>'
       }
       for (let i = 0; i < 4; i++){
-        abajo3.innerHTML += '<a class="albumblock" href="detailartist.html?id=' + datos.artists.data[i].id + '"> <img class="portadaAlbum" src="' + datos.artists.data[i].picture + '"> <p>' + datos.artists.data[i].name + '</p> </a>'
+        abajo3.innerHTML += '<a class="albumblock" href="detailartist.html?id=' + datos.artists.data[i].id + '"> <img class="portadaArtist" src="' + datos.artists.data[i].picture + '"> <p>' + datos.artists.data[i].name + '</p> </a>'
       }
   })
   .catch(function(error){
