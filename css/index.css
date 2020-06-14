@@ -261,6 +261,11 @@ footer{
         height: 100px;
         position: static;
     }
+    .titulos{
+        border-top: solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+       text-align: center;
+    }
     .logo{
         height: 75px ;
     }

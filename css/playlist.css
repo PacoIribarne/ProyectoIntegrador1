@@ -153,7 +153,7 @@ footer{
 }
 @media(max-width: 320px){
     .total{
-        grid-template-rows: 0.3fr 0.01fr 1.5fr 0.01fr;
+        grid-template-rows: 0.25fr 0.01fr 1.5fr 0.01fr;
     display: grid;
     }
     header{
@@ -163,6 +163,11 @@ footer{
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         font-size: 8px;
         height: 150px;
+    }
+    .titulos{
+        border-top: solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+       text-align: center;
     }
     .logo{
         height: 50px;

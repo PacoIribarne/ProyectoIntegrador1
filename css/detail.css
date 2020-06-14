@@ -108,4 +108,9 @@ footer{
     .total{
         grid-template-rows: 1fr 4fr 0.2fr;
     }
+    .titulos{
+        border-top: solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+       text-align: center;
+    }
 }

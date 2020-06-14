@@ -159,6 +159,11 @@ h1{
         height: 150px;
         width: auto;
     }
+    .titulos{
+        border-top: solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+       text-align: center;
+    }
     .logo{
         height: 50px;
         margin: auto;

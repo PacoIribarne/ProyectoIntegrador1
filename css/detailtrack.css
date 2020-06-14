@@ -225,6 +225,11 @@ footer{
         font-size: 8px;
         height: 150px;
     }
+    .titulos{
+        border-top: solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+       text-align: center;
+    }
     .logo{
         height: 50px;
         margin: auto;

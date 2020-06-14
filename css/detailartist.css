@@ -112,6 +112,11 @@ iframe{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
+    color: white;
+}
+.nombreAlbum{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .album{
     margin-left: auto;
@@ -211,11 +216,47 @@ footer{
         font-size: 8px;
         height: 150px;
     }
+    .titulos{
+        border-top: solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+       text-align: center;
+    }
     .logo{
         height: 50px;
         margin: auto;
     }
     .total{
-        grid-template-rows: 0.3fr 0.1 0.5fr 0.2fr;
+        grid-template-rows: 0.3fr 0.1fr 15fr 0.2fr;
+    }
+    .arriba{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.1fr 0.8fr 0.1fr 0.5fr 0.5fr;
+    }
+    section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.1fr 0.1fr;
+    }
+    .fotoArtista{
+        height: 200px;
+    }
+    h2{
+        width: 250px;
+    }
+    .canciones{
+        width: 250px;
+    }
+    li{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+    }
+    .albumes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
     }
 }

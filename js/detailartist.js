@@ -52,7 +52,7 @@ fetch(urlArtist)
         let albumes = document.querySelector(".albumes")
         let respuestas = datos.data
         for(let i=0 ; i < 5 ; i++){
-            albumes.innerHTML += ' <a href = "../html/detailalbum.html?id= '+ datos.data[i].id +' " > <img class="album" src="'+ datos.data[i].cover_medium +'" alt="album" height="140vh"> </a>'
+            albumes.innerHTML += ' <a href = "../html/detailalbum.html?id= '+ datos.data[i].id +' " > <img class="album" src="'+ datos.data[i].cover_medium +'" alt="album" height="140vh">' + '<p class="nombreAlbum">'+ datos.data[i].title+ '</p></a>'
         }
         console.log(datos);
 

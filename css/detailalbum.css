@@ -287,6 +287,11 @@ iframe{
         font-size: 8px;
         height: 150px;
     }
+    .titulos{
+        border-top: solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+       text-align: center;
+    }
     .logo{
         height: 50px;
         margin: auto;
@@ -309,9 +314,21 @@ iframe{
         font-size: 20px;
         line-height: 0;
     }
+    li{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+    }
     .lanzamiento{
         font-size: 15px;
         line-height: 0;
+    }
+    iframe{
+        width: 100%;
+    }
+    .agregar{
+        padding-top: 10px;
+        font-size: 20px;
     }
     .imagenAlbum{
         height: 200px;
