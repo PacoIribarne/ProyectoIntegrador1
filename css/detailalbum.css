@@ -1,6 +1,6 @@
 .total{
     display: grid;
-    grid-template-rows: 2fr 0.1fr 12fr 0.2fr;
+    grid-template-rows: 2fr 0.1fr 20fr 0.2fr;
     margin: auto;
 }
 header{

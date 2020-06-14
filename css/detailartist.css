@@ -154,7 +154,7 @@ footer{
 }
 @media(max-width: 768px){
     .total{
-        grid-template-rows: 0.3fr 0.1fr 2fr 0.2fr;
+        grid-template-rows: 0.5fr 0.1fr 4fr 0.2fr;
     }
     header{
         height: 100px;
@@ -172,11 +172,8 @@ footer{
     .derecha{
         grid-template-rows: 0.1fr 1.5fr;
     }
-    .fotospinetta{
+    .fotoArtista{
         height: 200px;
-    }
-    .boton-play{
-        height: 40px;
     }
     .nombre{
         font-size: 20px;
@@ -186,6 +183,9 @@ footer{
     }
     .album{
         height: 100px;
+    }
+    .agregar{
+        font-size: 20px;
     }
     .AgusLerej{
         font-size: 12px;
@@ -226,18 +226,22 @@ footer{
         margin: auto;
     }
     .total{
-        grid-template-rows: 0.3fr 0.1fr 15fr 0.2fr;
+        grid-template-rows: 0.3fr 0.1fr 8fr 0.2fr;
     }
     .arriba{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.1fr 0.8fr 0.1fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr 4fr;
+    }
+    .derecha{
+        grid-template-rows: 0.2fr 1fr;
+        margin: auto;
     }
     section{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.1fr 0.1fr;
+        grid-template-rows: 0.6fr 1fr;
     }
     .fotoArtista{
         height: 200px;

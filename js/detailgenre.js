@@ -30,9 +30,13 @@ fetch(urlGenreArtist)
         console.log(datos);
         let resultados = datos.data;
         let artists = document.querySelector('.artists');
-        resultados.forEach(function(artist){
-        artists.innerHTML += '<a class="artist" href="detailartist.html?id=' + artist.id + '"> <img src="' + artist.picture_medium + '"> <p class="nombre">' + artist.name + '</p> </a>'
-        })
+        
+        for(let i = 0; i < 10; i++){
+            artists.innerHTML += '<a class="artist" href="detailartist.html?id=' + resultados[i].id + '"> <img src="' + resultados[i].picture_medium + '"> <p class="nombre">' + resultados[i].name + '</p> </a>'
+        }
+        //resultados.forEach(function(artist){
+        //artists.innerHTML += '<a class="artist" href="detailartist.html?id=' + artist.id + '"> <img src="' + artist.picture_medium + '"> <p class="nombre">' + artist.name + '</p> </a>'
+        //})
     })
     .catch(function(error){
         console.log(error)

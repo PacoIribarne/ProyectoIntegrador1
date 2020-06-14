@@ -1,3 +1,7 @@
+.total{
+    display: grid;
+    grid-template-rows: 2fr 0.1fr 28fr 0.2fr;
+}
 header{
     display: grid;
     background-color: rgba(139, 39, 3, 0.918);
@@ -23,16 +27,19 @@ footer{
 .AgusLerej{
     margin: auto;
 }
+section{
+    margin-left: auto;
+    margin-right: auto;
+}
 ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
 }
 .li{
     text-decoration: none;
     display: grid;
     grid-template-rows: 4fr 1fr;
-    text-align: center;
 }
 p{
     color: white;
@@ -45,7 +52,6 @@ form{
     margin-top: 10px;
     text-align: right;
     margin-bottom: 10px;
-
 }
 .facebook{
     height: 20px;
@@ -80,4 +86,82 @@ a{
     text-decoration: none;
     text-align: center;
     color: black;
+}
+@media(max-width: 768px){
+    header{
+        position: static;
+    }
+    .total{
+        grid-template-rows: 2fr 0.1fr 40fr 0.2fr ;
+    }
+    .titulos{
+        font-size: 25px;
+    }
+    ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .logo{
+        height: 75px;
+    }
+    img{
+        height: 200px;
+    }
+    .AgusLerej{
+        font-size: 12px;
+        margin: auto;
+    }
+    .facebook{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
+    }
+    .twitter{
+        height: 10px;
+        margin: auto;
+        padding: 5px;
+    }
+    .deezer{
+        height: 15px;
+        margin: auto;
+        padding: 5px;
+    }
+}
+@media(max-width: 320px){
+    header{
+        display: grid;
+        grid-template-columns: none; 
+        align-items: center;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        font-size: 8px;
+        height: 150px;
+        width: auto;
+    }
+    .titulos{
+        border-top: solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+       text-align: center;
+    }
+    .total{
+        display: grid;
+        grid-template-rows: 0.4fr 0.1fr 10fr 0.3fr;
+    }
+    img{
+        height: 100px;
+    }
+    ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    .AgusLerej{
+        font-size: 10px;
+    }
+    .facebook{
+        height: 10px;
+    }
+    .twitter{
+        height: 10px;
+    }
+    .deezer{
+        height: 15px;
+        margin: auto;
+    }
 }
