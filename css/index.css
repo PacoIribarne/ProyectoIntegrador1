@@ -106,16 +106,6 @@ a{
     bottom: 8px;
     background-color: rgba(0, 0, 0, 0.76);
   }
-  .punto {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: grey;
-    border-radius: 50%;
-    display: inline-block;
-    transition: 1s linear;
-  }
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
