@@ -14,6 +14,7 @@ header{
     border: solid #353535 1.5px;
     height: 100px;
     padding: 15px;
+    border-radius: 10px;
 }
 .granLogo{
     margin-left: auto;

@@ -17,6 +17,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
+    border-radius: 10px;
 }
 h1{
     text-align: center;
@@ -31,6 +32,7 @@ h1{
     margin: auto;
     height: 100px;
 }
+
 .titulos{
     margin: auto;
 }
