@@ -85,6 +85,7 @@ section{
     height: 400px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15px;
 }
 h1{
     color: white;

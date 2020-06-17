@@ -68,6 +68,7 @@ section{
 img{
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15px;
 }
 p{
     color: white;

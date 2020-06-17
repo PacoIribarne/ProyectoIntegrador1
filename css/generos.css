@@ -121,6 +121,9 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10px;
 }
+.individual{
+    border-radius: 15px;
+}
 
 @media(max-width: 768px){
     header{
@@ -149,6 +152,7 @@ h1{
     }
     .individual{
         height: 200px;
+    
     }
     footer{
         margin-top: 10px;
