@@ -26,13 +26,13 @@ fetch(url)
         console.log (datos) 
 
         for(let i = 0; i < 10 ; i++){
-            lista.innerHTML += '<div> <a class="resultado" href="detailartist.html?id=' + resultados[i].artist.id + '"> <img src="' + resultados[i].artist.picture_medium + '"> <p>' + resultados[i].artist.name + ' - Artist </p> </a> </div>'
+            lista.innerHTML += '<a class="resultado" href="detailartist.html?id=' + resultados[i].artist.id + '"> <img src="' + resultados[i].artist.picture_medium + '"> <p>' + resultados[i].artist.name + ' - Artist </p> </a>'
         }
         for(let i = 0; i < 10; i++){
-            lista.innerHTML += '<div> <a class="resultado" href="detailtrack.html?id=' + resultados[i].id + '"> <img src="' + resultados[i].album.cover_medium + '"> <p>' + resultados[i].title + ' - Track</p> </a> </div>'
+            lista.innerHTML += '<a class="resultado" href="detailtrack.html?id=' + resultados[i].id + '"> <img src="' + resultados[i].album.cover_medium + '"> <p>' + resultados[i].title + ' - Track</p> </a>'
         }
         for(let i = 0; i < 5; i++){
-            lista.innerHTML += '<div> <a class="resultado" href="detailalbum.html?id=' + resultados[i].album.id + '"> <img src="' + resultados[i].album.cover_medium + '"> <p>' + resultados[i].album.title + ' - Album </p> </a> </div>'
+            lista.innerHTML += '<a class="resultado" href="detailalbum.html?id=' + resultados[i].album.id + '"> <img src="' + resultados[i].album.cover_medium + '"> <p>' + resultados[i].album.title + ' - Album </p> </a>'
         }
         //resultados.forEach(function(resultado){
             

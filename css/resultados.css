@@ -23,10 +23,6 @@
         visibility: hidden;
     }
 }
-.total{
-    display: grid;
-    grid-template-rows: 2fr 0.1fr 35fr 0.2fr;
-}
 header{
     display: grid;
     background: rgb(0,0,0);
@@ -53,6 +49,9 @@ a{
     text-decoration: none;
     text-align: center;
     color: black;
+}
+.buscador{
+    margin-top: 10px;
 }
 section{
     margin-top: 10px;
@@ -118,9 +117,6 @@ body{
     header{
         position: static;
     }
-    .total{
-        grid-template-rows: 2fr 0.1fr 40fr 0.2fr ;
-    }
     .titulos{
         font-size: 25px;
     }
@@ -175,15 +171,14 @@ body{
         height: 50px;
         margin: auto;
     }
-    .total{
-        display: grid;
-        grid-template-rows: 0.4fr 0.1fr 10fr 0.1fr;
-    }
     img{
         height: 100px;
     }
     .lista{
         grid-template-columns: 1fr 1fr;
+    }
+    .resultado{
+        grid-template-rows: 1fr 1fr;
     }
     .AgusLerej{
         font-size: 10px;
