@@ -140,4 +140,7 @@ footer{
         height: 15px;
         margin: auto;
     }
+    header{
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);
+    }
 }
