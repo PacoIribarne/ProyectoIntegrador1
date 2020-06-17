@@ -1,6 +1,10 @@
+.total{
+    display: grid;
+    grid-template-rows: 0.5fr 0.1fr 2fr 0.3fr;
+}
 header{
     display: grid;
-    grid-template-columns: 0.65fr 1fr;
+    grid-template-columns: 0.25fr 1fr;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);
     font-family: 'Patrick Hand', cursive;
@@ -11,12 +15,18 @@ header{
     height: 100px;
     padding: 15px;
 }
+.granLogo{
+    margin-left: auto;
+    margin-right: auto;
+}
 .logo{
-    padding-left: 130px;
     height: 100px;
 }
 body{
     background-image: url(../img/fondo2.jpg);
+}
+h1{
+    text-align: center;
 }
 h2{
     color: white;
@@ -37,13 +47,11 @@ h2{
     margin-top: 5px;
 }
 footer{
-    background-color: rgba(255, 68, 0, 0.61);
-    border-radius: 10px;
+    background: rgb(213,9,9);
+    background: linear-gradient(90deg, rgba(213,9,9,1) 12%, rgba(130,98,98,1) 48%, rgba(255,42,86,1) 100%);
     border: solid #353535 1.5px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-top: 180px;
-    bottom: 0;
 }
 .AgusLerej{
     margin: auto;
@@ -86,19 +94,51 @@ footer{
     padding: 5px;
     border-bottom: solid black;
 }
+@media(max-width: 768px){
+    .total{
+        grid-template-rows: 1fr 0.1fr 1.6fr 0.4fr;
+    }
+}
 @media(max-width: 320px){
-    body{
+    .total{
+        grid-template-rows: 1.5fr 0.1fr 2fr 0.5fr;
+    }
+    header{
         display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 26%, rgba(213,9,9,0.7119368865710347) 65%, rgba(255,42,86,0.6895279229856005) 100%);
+        grid-template-columns: none; 
+        align-items: center;
+        grid-template-rows: 1fr 1fr;
+        height: 120px;
+    }
+    .logo{
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
     }
     h1{
-        display: none;
+        text-align: center;
+        font-size: 30px;
+        border-top: solid rgba(0, 0, 0, 0.5);
     }
-    footer{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+    h2{
+        font-size: 25px;
+    }
+    .AgusLerej{
+        font-size: 10px;
+    }
+    .facebook{
+        height: 10px;
+        margin: auto;
+    }
+    .twitter{
+        height: 10px;
+        margin: auto;
+    }
+    .deezer{
+        height: 15px;
+        margin: auto;
     }
     header{
         background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);

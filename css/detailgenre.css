@@ -88,7 +88,8 @@ img{
     font-size: 30px;
 }
 footer{
-    background-color: rgba(255, 68, 0, 0.61);
+    background: rgb(213,9,9);
+    background: linear-gradient(90deg, rgba(213,9,9,1) 12%, rgba(130,98,98,1) 48%, rgba(255,42,86,1) 100%);
     border-radius: 10px;
     border: solid #353535 1.5px;
     display: grid;
@@ -170,6 +171,8 @@ footer{
         background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);
         display: grid;
         grid-template-columns: none; 
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 21%, rgba(213,9,9,0.7119368865710347) 46%, rgba(255,42,86,0.6895279229856005) 100%);
         align-items: center;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         font-size: 8px;
