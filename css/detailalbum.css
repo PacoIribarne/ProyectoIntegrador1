@@ -34,7 +34,7 @@ header{
     background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border: white 5px;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Archivo', sans-serif;
     font-size: 30px;
     padding: 15px;
     border: solid #353535 1.5px;
