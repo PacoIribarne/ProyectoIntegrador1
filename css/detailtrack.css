@@ -117,7 +117,7 @@ footer{
     border-radius: 10px;
     border: solid #353535 1.5px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 1fr;
     margin-top: 10px;
 }
 .AgusLerej{
@@ -141,6 +141,8 @@ footer{
 .redesSociales{
     text-align: right;
     padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 @media(max-width: 768px){
     header{
@@ -180,9 +182,6 @@ footer{
     .duracion{
         font-size: 20px;
     }
-    footer{
-        margin-top: 10px;
-    }
     .AgusLerej{
         font-size: 12px;
         margin: auto;
@@ -205,7 +204,6 @@ footer{
 }
 @media(max-width: 320px){
     header{
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);
         display: grid;
         grid-template-columns: none; 
         background: rgb(0,0,0);
@@ -261,6 +259,10 @@ footer{
         width: 90px;
         margin: auto;
     }
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
     .AgusLerej{
         font-size: 10px;
     }
@@ -274,7 +276,5 @@ footer{
         height: 15px;
         margin: auto;
     }
-    footer{
-
-    }
+    
 }

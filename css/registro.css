@@ -5,7 +5,7 @@
 header{
     display: grid;
     background: rgb(0,0,0);
- background: linear-gradient(60deg, rgba(0,0,0,1) 13%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: linear-gradient(60deg, rgba(0,0,0,1) 13%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);    grid-template-columns: 1fr 1fr 1fr 1fr;
     border: white 5px;
     font-family: 'Archivo', sans-serif;
     font-size: 30px;
@@ -55,7 +55,7 @@ footer{
     background: linear-gradient(90deg, rgba(213,9,9,1) 12%, rgba(130,98,98,1) 48%, rgba(255,42,86,1) 100%);
     border: solid #353535 1.5px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 1fr;
     border-radius: 15px;
 }
 .AgusLerej{
@@ -79,6 +79,8 @@ footer{
 .redesSociales{
     text-align: right;
     padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 a{
     text-decoration: none;
@@ -103,21 +105,16 @@ a{
     grid-template-columns: 1fr 3fr;
     padding: 5px;
     border-bottom: solid black;
-}
-@media(max-width: 768px){
-    .total{
-        grid-template-rows: 1fr 0.1fr 1.6fr 0.4fr;
-    }
+}    
 @media(max-width: 768px){
         header{
             position: static;
         }
         .total{
-            grid-template-rows: 2fr 0.1fr 1.5fr 0.2fr ;
+            grid-template-rows: 1fr 0.1fr 1.6fr 0.4fr;
         }
         .titulos{
             font-size: 25px;
-        }
         }
         .logo{
             height: 75px;
@@ -150,14 +147,13 @@ a{
         grid-template-rows: 1.5fr 0.1fr 3fr 0.5fr;
     }
     header{
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);
         display: grid;
         grid-template-columns: none; 
         background: rgb(0,0,0);
         background: linear-gradient(180deg, rgba(0,0,0,1) 21%, rgba(213,9,9,0.7119368865710347) 46%, rgba(255,42,86,0.6895279229856005) 100%);
         align-items: center;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
-        font-size: 25px;
+        font-size: 8px;
         height: 150px;
         width: auto;
     }
@@ -177,6 +173,10 @@ a{
     }
     h2{
         font-size: 25px;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .AgusLerej{
         font-size: 10px;

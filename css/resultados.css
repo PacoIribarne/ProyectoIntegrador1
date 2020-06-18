@@ -26,7 +26,7 @@
 header{
     display: grid;
     background: rgb(0,0,0);
- background: linear-gradient(60deg, rgba(0,0,0,1) 13%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: linear-gradient(60deg, rgba(0,0,0,1) 13%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);    grid-template-columns: 1fr 1fr 1fr 1fr;
     border: white 5px;
     font-family: 'Archivo', sans-serif;
     font-size: 30px;
@@ -83,7 +83,7 @@ footer{
     border-radius: 10px;
     border: solid #353535 1.5px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 1fr;
     margin-top: 10px;
 }
 .AgusLerej{
@@ -107,6 +107,8 @@ footer{
 .redesSociales{
     text-align: right;
     padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 body{
     background-image: url(../img/fondo2.jpg);
@@ -150,7 +152,6 @@ body{
 }
 @media(max-width: 320px){
     header{
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);
         display: grid;
         grid-template-columns: none; 
         background: rgb(0,0,0);
@@ -177,6 +178,10 @@ body{
         grid-template-columns: 1fr 1fr;
     }
     .resultado{
+        grid-template-rows: 1fr 1fr;
+    }
+    footer{
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
     .AgusLerej{
