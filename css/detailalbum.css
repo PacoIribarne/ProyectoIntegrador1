@@ -156,16 +156,8 @@ li{
     grid-template-columns: 3fr 1fr;
   
 }
-.boton-play{
-    height: 50px;
-    margin: auto;
-    cursor: pointer;
-}
 .nombre{
     text-align: left;
-}
-audio{
-    margin: auto;
 }
 footer{
     background: rgb(213,9,9);
@@ -205,6 +197,9 @@ iframe{
     width: 100%;
     border-radius: 15px;
 }
+.agregar{
+    font-size: 25px;
+}
 @media(max-width: 768px){
     header{
         height: 100px;
@@ -232,15 +227,8 @@ iframe{
     .imagenAlbum{
         height: 300px;
     }
-    .boton-play{
-        height: 50px;
-    }
     .nombre{
         font-size: 20px;
-    }
-    audio{
-        height: 20px;
-        width: 150px;
     }
     .AgusLerej{
         font-size: 12px;
@@ -261,8 +249,8 @@ iframe{
         margin: auto;
         padding: 5px;
     }
-    .sonar{
-        display: none;
+    .agregar{
+        font-size: 20px;
     }
 }
 @media(max-width: 320px){

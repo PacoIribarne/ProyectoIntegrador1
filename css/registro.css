@@ -19,6 +19,11 @@ header{
 .titulos{
     margin: auto;
 }
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;  
+}
 .granLogo{
     margin-left: auto;
     margin-right: auto;
