@@ -1,20 +1,23 @@
 .total{
     display: grid;
-    grid-template-rows: 0.5fr 0.1fr 2fr 0.3fr;
+    grid-template-rows: 0.5fr 0.1fr 2.80fr 0.3fr;
 }
 header{
     display: grid;
-    grid-template-columns: 0.25fr 1fr;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);
-    font-family: 'Patrick Hand', cursive;
-    font-size: 20px;
+ background: linear-gradient(60deg, rgba(0,0,0,1) 13%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);    grid-template-columns: 1fr 1fr 1fr 1fr;
     border: white 5px;
     font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    padding: 15px;
     border: solid #353535 1.5px;
     height: 100px;
-    padding: 15px;
+    position: sticky;
+    top: 0;
     border-radius: 10px;
+}
+.titulos{
+    margin: auto;
 }
 .granLogo{
     margin-left: auto;
@@ -53,6 +56,8 @@ footer{
     border: solid #353535 1.5px;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    border-radius: 15px;
+   
 }
 .AgusLerej{
     margin: auto;
@@ -75,6 +80,11 @@ footer{
 .redesSociales{
     text-align: right;
     padding-right: 10px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
 }
 .trackblock{
     display: grid;
@@ -99,28 +109,71 @@ footer{
     .total{
         grid-template-rows: 1fr 0.1fr 1.6fr 0.4fr;
     }
+@media(max-width: 768px){
+        header{
+            position: static;
+        }
+        .total{
+            grid-template-rows: 2fr 0.1fr 1.5fr 0.2fr ;
+        }
+        .titulos{
+            font-size: 25px;
+        }
+        }
+        .logo{
+            height: 75px;
+        }
+        img{
+            height: 200px;
+        }
+        .AgusLerej{
+            font-size: 12px;
+            margin: auto;
+        }
+        .facebook{
+            height: 10px;
+            margin: auto;
+            padding: 5px;
+        }
+        .twitter{
+            height: 10px;
+            margin: auto;
+            padding: 5px;
+        }
+        .deezer{
+            height: 15px;
+            margin: auto;
+            padding: 5px;
+        }
 }
 @media(max-width: 320px){
     .total{
-        grid-template-rows: 1.5fr 0.1fr 2fr 0.5fr;
+        grid-template-rows: 1.5fr 0.1fr 3fr 0.5fr;
     }
     header{
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(213,9,9,0.7119368865710347) 30%, rgba(255,42,86,0.6895279229856005) 100%);
         display: grid;
-        background: rgb(0,0,0);
-        background: linear-gradient(180deg, rgba(0,0,0,1) 26%, rgba(213,9,9,0.7119368865710347) 65%, rgba(255,42,86,0.6895279229856005) 100%);
         grid-template-columns: none; 
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 21%, rgba(213,9,9,0.7119368865710347) 46%, rgba(255,42,86,0.6895279229856005) 100%);
         align-items: center;
-        grid-template-rows: 1fr 1fr;
-        height: 120px;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        font-size: 25px;
+        height: 150px;
+        width: auto;
+    }
+    .titulos{
+        border-top: solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+       text-align: center;
     }
     .logo{
-        height: 60px;
-        margin-left: auto;
-        margin-right: auto;
+        height: 50px;
+        margin: auto;
     }
     h1{
         text-align: center;
-        font-size: 30px;
+       
         border-top: solid rgba(0, 0, 0, 0.5);
     }
     h2{
