@@ -22,3 +22,10 @@ function buscarYMostrarTrack(idTrack){
             console.log(error)
         })
 }
+
+if(recuperoStorage == null || recuperoStorage == "[]"){
+    playlist = [];
+    playlistWrapper.innerHTML += '<li> No hay canciones en tu playlist </li>'
+    console.log(playlistWrapper);
+    
+} 

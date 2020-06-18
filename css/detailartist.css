@@ -66,6 +66,7 @@ section{
     display: grid;
     grid-template-rows: 2fr 0.4fr;
     margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
 }
 .arriba{
     display: grid;
@@ -133,6 +134,7 @@ iframe{
     border-radius: 15px;
 }
 .albumes{
+    font-family: 'Roboto Slab', serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
@@ -145,6 +147,14 @@ iframe{
 .album{
     margin-left: auto;
     margin-right: auto;
+    height: 190px;
+}
+.relacionados{
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    color: white;
 }
 footer{
     background: rgb(213,9,9);
@@ -154,6 +164,7 @@ footer{
     display: grid;
     grid-template-columns: 4fr 1fr;
     margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .AgusLerej{
     margin: auto;
@@ -206,7 +217,7 @@ footer{
         font-size: 30px;
     }
     .album{
-        height: 100px;
+        height: 120px;
     }
     .agregar{
         font-size: 20px;
@@ -280,7 +291,15 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.5fr;
     }
+    .album{
+        height: 100px;
+    }
     .albumes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .relacionados{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;

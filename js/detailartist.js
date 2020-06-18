@@ -57,7 +57,7 @@ fetch(urlArtist)
         let albumes = document.querySelector(".albumes")
         let respuestas = datos.data
         for(let i=0 ; i < 5 ; i++){
-            albumes.innerHTML += ' <a href = "../html/detailalbum.html?id= '+ datos.data[i].id +' " > <img class="album" src="'+ datos.data[i].cover_medium +'" alt="album" height="140vh">' + '<p class="nombreAlbum">'+ datos.data[i].title+ '</p></a>'
+            albumes.innerHTML += ' <a href = "../html/detailalbum.html?id= '+ datos.data[i].id +' " > <img class="album" src="'+ datos.data[i].cover_medium +'" alt="album">' + '<p class="nombreAlbum">'+ datos.data[i].title+ '</p></a>'
         }
         console.log(datos);
 
@@ -66,6 +66,25 @@ fetch(urlArtist)
         console.log(error)
     })
     
+    let urlRelated = proxy + "https://api.deezer.com/artist/" + idArtist + "/related";
+
+    fetch(urlRelated)
+    .then(function(response){
+       return response.json();
+   })
+   .then(function(datos){
+       let relacionados = document.querySelector(".relacionados")
+       let respuestas = datos.data
+       for(let i=0 ; i < 5 ; i++){
+           relacionados.innerHTML += ' <a href = "../html/detailartist.html?id= '+ datos.data[i].id +' " > <img class="album" src="'+ datos.data[i].picture_medium +'" alt="album">' + '<p class="nombreAlbum">'+ datos.data[i].name+ '</p></a>'
+       }
+       console.log(datos);
+
+   })
+   .catch(function(error){
+       console.log(error)
+   })
+
     // <li class="cancion">
     //             <img class="boton-play" src="../img/play.png" alt="">
     //             <p class="nombre">Canción 1</p>
