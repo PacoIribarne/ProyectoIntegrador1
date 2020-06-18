@@ -1,16 +1,34 @@
+
 var slideIndex = 0;
+  var slides = document.getElementsByClassName("FotosCarrusel");
+
 showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("FotosCarrusel");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function showSlides() {    
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 5000);
+}
+
+function currentSlide(no) {
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex = no;
+    slides[no-1].style.display = "block";
+}
+
+function plusSlides(n) {
+  var newslideIndex = slideIndex + n;
+  if(newslideIndex < 5 && newslideIndex > 0){
+     currentSlide(newslideIndex);
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); 
 }
 
 let proxy = 'https://cors-anywhere.herokuapp.com/'

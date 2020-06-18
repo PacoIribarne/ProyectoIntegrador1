@@ -58,7 +58,8 @@ a{
 .buscador{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-top: 10px;
+    margin: auto;
+    height: 15px;
 }
 .registro{
     text-decoration: none;
@@ -105,16 +106,6 @@ a{
     position: absolute;
     bottom: 8px;
     background-color: rgba(0, 0, 0, 0.76);
-  }
-  .punto {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: grey;
-    border-radius: 50%;
-    display: inline-block;
-    transition: 1s linear;
   }
   .fade {
     -webkit-animation-name: fade;
@@ -268,7 +259,6 @@ footer{
         position: static;
     }
     .titulos{
-        border-top: solid rgba(0, 0, 0, 0.5);
         width: 100%;
        text-align: center;
     }
@@ -278,12 +268,15 @@ footer{
     .titulos{
         font-size: 25px;
     }
-   
     p{
         font-size: 12px;
     }
     .premio{
         display: none;
+    }
+    .intermedio{
+        height: 30px;
+        grid-template-columns: 1fr 1fr;
     }
     .portadaTrack{
         height: 40px;
@@ -330,21 +323,38 @@ footer{
         height: 50px;
         margin: auto;
     }
+<<<<<<< HEAD
 
+=======
+    .titulos{
+         border-top: solid rgba(0, 0, 0, 0.5);
+    }
+    .intermedio{
+        margin-top: 10px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 1px;
+    }
+    .buscador{
+        margin: 0;
+        height: 15px;
+    }
+    .registro{
+        font-size: 15px;
+    }
+>>>>>>> 886f8947f3640db8894cda42df5f4c8aae65275f
     .Carrusel{
         display: none;
-    
     }
     .puntos{
         display: none;
     }
     .triple{
-        gap: 1px;
-        margin-top: -50px;
-        display: inline;
+        grid-auto-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .total{
-        grid-template-rows: 0.2fr 0.01fr 1fr 0.01fr;
+        grid-template-rows: 1.5fr 0.1fr 14fr 0.5fr;
     }
     .albumblock{
         vertical-align: top;
@@ -362,7 +372,6 @@ footer{
         display: block;
         font-size: 15px;
     }
-    
     .AgusLerej{
         font-size: 10px;
     }
@@ -390,8 +399,5 @@ footer{
     .portadaArtist{
         height: 100px;
     }
-    .intermedio{
-        position: relative;
-        bottom: 90px;
-    }
+
 }
