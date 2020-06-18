@@ -41,7 +41,8 @@ h1{
     margin-top: 10px;
 }
 .playlistWrapper{
-    background-color: rgba(255, 68, 0, 0.61);
+    background: rgb(171,11,11);
+    background: linear-gradient(241deg, rgba(171,11,11,1) 21%, rgba(245,13,61,1) 74%);
     border-radius: 10px;
     width: 500px;
     margin-right: auto;

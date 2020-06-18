@@ -83,9 +83,9 @@ h1{
 h2{
     text-align: center;
     line-height: 0;
+    font-size: 25px;
 }
 .h2{
-    font-size: 30px;
     color: white;
     text-align: left;
 }
@@ -94,7 +94,8 @@ h2{
     grid-template-columns: 3fr 1fr;
     gap: 10px;
     border-radius: 10px;
-    background-color: rgba(255, 68, 0, 0.61);
+    background: rgb(171,11,11);
+    background: linear-gradient(241deg, rgba(171,11,11,1) 21%, rgba(245,13,61,1) 74%);
     border: solid #353535 1.5px;
     height: 100px;
     width: 100%;

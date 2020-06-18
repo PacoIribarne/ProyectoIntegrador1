@@ -139,7 +139,8 @@ h2{
     text-align: center;
 }
 ul{
-    background-color: rgba(255, 68, 0, 0.61);
+    background: rgb(135,1,1);
+    background: linear-gradient(78deg, rgba(135,1,1,1) 51%, rgba(224,0,0,1) 76%);
     padding: 10px;
     display: grid;
     grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;

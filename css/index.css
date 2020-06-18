@@ -51,7 +51,8 @@ a{
 }
 .premio{
     border-radius: 10px;
-    background-color: rgba(255, 68, 0, 0.61);
+    background: rgb(171,11,11);
+    background: linear-gradient(151deg, rgba(171,11,11,1) 18%, rgba(198,0,0,1) 46%);
     border: solid #353535 1.5px;
     margin-top: 10px;
 }
@@ -138,7 +139,8 @@ a{
      
 }
 .semititulos{
-    background-color: rgba(255, 68, 0, 0.61);
+    background: rgb(171,11,11);
+    background: linear-gradient(241deg, rgba(171,11,11,1) 21%, rgba(245,13,61,1) 74%);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: solid #353535 1.5px;
@@ -147,7 +149,8 @@ a{
     font-size: 20px;
 }
 .abajo{
-    background-color: rgba(255, 68, 0, 0.61);
+    background: rgb(171,11,11);
+    background: linear-gradient(241deg, rgba(171,11,11,1) 21%, rgba(245,13,61,1) 74%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -165,7 +168,8 @@ a{
 }
 
 .abajo2{
-    background-color: rgba(255, 68, 0, 0.61);
+    background: rgb(171,11,11);
+    background: linear-gradient(241deg, rgba(171,11,11,1) 21%, rgba(245,13,61,1) 74%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -182,7 +186,8 @@ a{
 }
 
 .abajo3{
-    background-color: rgba(255, 68, 0, 0.61);
+    background: rgb(171,11,11);
+    background: linear-gradient(241deg, rgba(171,11,11,1) 21%, rgba(245,13,61,1) 74%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family: 'Montserrat', sans-serif;
