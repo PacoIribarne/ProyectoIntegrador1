@@ -46,13 +46,14 @@ body{
 }
 section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     margin-top: 10px;
     border-radius: 5px;
     margin: auto;
     background-color: rgba(116, 113, 113, 0.281) ;
     padding: 25px;
     margin-top: 10px;
+    gap: 10px;
 }
 .album{
     display: grid;
@@ -223,7 +224,6 @@ footer{
         border: solid white 1px;
         border: transparent;
         position: relative;
-        width: 200px;
     }
     .album{
         text-align: center;
@@ -245,13 +245,16 @@ footer{
     }
     .agregados{
         height: 100%;
-        width: 200px;
+        width: 100%;
         grid-template-rows: 1fr 0.2fr;
         grid-template-columns: 1fr;
     }
     iframe{
         width: 90px;
         margin: auto;
+    }
+    .duracion{
+        font-size: 20px;
     }
     footer{
         grid-template-columns: 1fr;
