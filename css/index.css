@@ -136,7 +136,6 @@ a{
      grid-template-rows: 1fr 10fr;
      gap: 8px;
      text-align: center;
-     
 }
 .semititulos{
     background: rgb(171,11,11);
@@ -144,9 +143,11 @@ a{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: solid #353535 1.5px;
-    font-family: 'Archivo', sans-serif;
-    font-weight: lighter;
+}
+.top{
+    margin-top: 10px;
     font-size: 20px;
+    font-family: 'Archivo', sans-serif;
 }
 .abajo{
     background: rgb(171,11,11);
@@ -197,12 +198,15 @@ a{
 }
 .portadaTrack{
     height: 100px;
+    margin: auto;
 }
 .portadaAlbum{
     height: 100px;
+    margin: auto;
 }
 .portadaArtist{
     height: 100px;
+    margin: auto;
 }
 footer{
     background: rgb(213,9,9);
@@ -260,7 +264,7 @@ footer{
 @media(max-width: 768px){
     .total{
         display: grid;
-        grid-template-rows: 0.4fr 0.1fr 1.4fr 0.2fr;
+        grid-template-rows: unset;
     }
     header{
         height: 100px;
@@ -286,14 +290,28 @@ footer{
         height: 30px;
         grid-template-columns: 1fr 1fr;
     }
+    .registro{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .Carrusel{
+        display: none;
+    }
+    .albumblock{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+    }
     .portadaTrack{
-        height: 40px;
+        height: 90%;
+        margin: auto;
     }
     .portadaAlbum{
-        height: 40px;
+        height: 90%;
+        margin: auto;
     }
     .portadaArtist{
-        height: 40px;
+        height: 90%;
+        margin: auto;
     }
     .AgusLerej{
         font-size: 12px;
@@ -346,9 +364,6 @@ footer{
     .registro{
         font-size: 15px;
     }
-    .Carrusel{
-        display: none;
-    }
     .puntos{
         display: none;
     }
@@ -356,12 +371,32 @@ footer{
         grid-auto-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
-    .total{
-        grid-template-rows: 1.5fr 0.1fr 14fr 0.5fr;
-    }
     .albumblock{
         vertical-align: top;
         text-align: center;
+        grid-template-rows: 2fr 1fr;
+        border-left: solid black 1px;
+    }
+    .tracks{
+        grid-template-rows: 1fr 4fr;
+    }
+    .albums{
+        grid-template-rows: 1fr 4fr;
+    }
+    .artist{
+        grid-template-rows: 1fr 4fr;
+    }
+    .abajo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .abajo2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .abajo3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .trackblock{
         vertical-align: top;

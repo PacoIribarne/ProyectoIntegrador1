@@ -16,10 +16,6 @@ header{
     text-align: right;
     margin-top: 10px;
 }
-.total{
-    display: grid;
-    grid-template-rows: 2fr 0.1fr 7.2fr 0.2fr;
-}
 .logo{
     margin: auto;
     height: 100px;
@@ -102,9 +98,6 @@ h2{
     border: solid #353535 1.5px;
     height: 100px;
     width: 100%;
-}
-.boton-play{
-    height: 80px;
 }
 .duracion{
     font-size: 20px;
